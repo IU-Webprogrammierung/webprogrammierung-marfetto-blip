@@ -1,219 +1,233 @@
-Portfolio Project – Web-Programming (DLBUXPWP01)
-
-This repository contains a personal portfolio project, which was developed for the IU International University course "Web-Programmierung (DLBUXPWP01)". The objective of the project was to create a fully responsive, accessible, and visually engaging portfolio website that highlights both personal and professional aspects, with a particular emphasis on practical UX design work.
-
-
-
-Project Idea
-
-The main concept was to build a static website that introduces myself, my experiences and selected design projects in a professional and appealing way. The focus was on clear information architecture, aesthetic design, and precise technical implementation – relying exclusively on HTML, CSS and maybe JavaScript
-
-
-<div style="direction: ltr;">
-<table style="direction: ltr; border-collapse: collapse; border: 1pt solid #A3A3A3;" title="" border="1" summary="" cellspacing="0" cellpadding="0">
+<h1 dir="auto" data-sourcepos="1:1-1:50">Portfolio Project &ndash; Web-Programming (DLBUXPWP01)</h1>
+<p dir="auto" data-sourcepos="3:1-3:379">This repository contains a personal portfolio project, which was developed for the IU International University course "Web-Programmierung (DLBUXPWP01)". The objective of the project was to create a fully responsive, accessible, and visually engaging portfolio website that highlights both personal and professional aspects, with a particular emphasis on practical UX design work.</p>
+<hr />
+<h2 dir="auto" data-sourcepos="5:1-5:12">Project Idea</h2>
+<p dir="auto" data-sourcepos="7:1-7:313">The main concept was to build a static website that introduces myself, my experiences and selected design projects in a professional and appealing way. The focus was on clear information architecture, aesthetic design, and precise technical implementation &ndash; relying exclusively on HTML, CSS and maybe JavaScript</p>
+<hr />
+<h2 dir="auto">Menu</h2>
+<p dir="auto">Home.</p>
+<p dir="auto">About.</p>
+<p dir="auto">Work.</p>
+<p dir="auto">--&gt; Plantagotchi (Mobile Design)</p>
+<p dir="auto">--&gt; SurfGuard (Applied UX)</p>
+<p dir="auto">--&gt; Easy Fleet (Enterprise Software)</p>
+<p dir="auto">--&gt; Braunschweig like a Local (Webdesign)</p>
+<p dir="auto">Contact.</p>
+<p dir="auto">&nbsp;</p>
+<hr />
+<h2 dir="auto">Structure</h2>
+<div dir="auto">
+<table style="width: 620px;" title="" border="1" summary="" cellspacing="0" cellpadding="0">
 <tbody>
 <tr>
-<td style="vertical-align: top; width: 1.5104in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">Page</p>
+<td style="width: 163px;">
+<p dir="auto">Page</p>
 </td>
-<td style="vertical-align: top; width: 1.8229in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">Name</p>
+<td style="width: 145px;">
+<p dir="auto">Name</p>
 </td>
-<td style="vertical-align: top; width: 1.1847in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">Shown in menu</p>
+<td style="width: 309.6px;">
+<p dir="auto">Shown in menu</p>
 </td>
-<td style="vertical-align: top; width: 3.0194in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">Content</p>
-</td>
-</tr>
-<tr>
-<td style="vertical-align: top; width: 1.5104in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">index.html</p>
-</td>
-<td style="vertical-align: top; width: 1.8229in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">Home.</p>
-</td>
-<td style="vertical-align: top; width: 1.0875in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">Yes</p>
-</td>
-<td style="vertical-align: top; width: 3.3319in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<ul style="direction: ltr; unicode-bidi: embed; margin-top: 0in; margin-bottom: 0in;">
-<ul style="direction: ltr; unicode-bidi: embed; margin-top: 0in; margin-bottom: 0in;" type="disc">
-<li style="margin-top: 0; margin-bottom: 0; vertical-align: middle;"><span style="font-family: Calibri; font-size: 11.0pt;">Hero-Section</span></li>
-<li style="margin-top: 0; margin-bottom: 0; vertical-align: middle;"><span style="font-family: Calibri; font-size: 11.0pt;">Overview and links about the content in sections</span></li>
-</ul>
-</ul>
+<td style="width: 10px;">
+<p dir="auto">Content</p>
 </td>
 </tr>
 <tr>
-<td style="vertical-align: top; width: 1.5104in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">about.html</p>
+<td style="width: 163px;">
+<p dir="auto">index.html</p>
 </td>
-<td style="vertical-align: top; width: 1.8229in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">About Me.</p>
+<td style="width: 145px;">
+<p dir="auto">Home.</p>
 </td>
-<td style="vertical-align: top; width: 1.0875in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">Yes</p>
+<td style="width: 309.6px;">
+<p dir="auto">Yes</p>
 </td>
-<td style="vertical-align: top; width: 3.2277in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<ul style="direction: ltr; unicode-bidi: embed; margin-top: 0in; margin-bottom: 0in;">
-<ul style="direction: ltr; unicode-bidi: embed; margin-top: 0in; margin-bottom: 0in;" type="disc">
-<li style="margin-top: 0; margin-bottom: 0; vertical-align: middle;"><span style="font-family: Calibri; font-size: 11.0pt;">Hero-Section</span></li>
-<li style="margin-top: 0; margin-bottom: 0; vertical-align: middle;"><span style="font-family: Calibri; font-size: 11.0pt;">Introduction (Get to know)</span></li>
-<li style="margin-top: 0; margin-bottom: 0; vertical-align: middle;"><span style="font-family: Calibri; font-size: 11.0pt;">Work Experience</span></li>
-<li style="margin-top: 0; margin-bottom: 0; vertical-align: middle;"><span style="font-family: Calibri; font-size: 11.0pt;">Education</span></li>
-<li style="margin-top: 0; margin-bottom: 0; vertical-align: middle;"><span style="font-family: Calibri; font-size: 11.0pt;">Skills (soft and hard)</span></li>
-<li style="margin-top: 0; margin-bottom: 0; vertical-align: middle;"><span style="font-family: Calibri; font-size: 11.0pt;">Extra Information (Personal Information)</span></li>
+<td style="width: 10px;">
+<ul dir="auto">
+<ul dir="auto" type="disc">
+<li>Hero-Section</li>
+<li>Overview and links about the content in sections</li>
 </ul>
 </ul>
 </td>
 </tr>
 <tr>
-<td style="vertical-align: top; width: 1.5104in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">works.html</p>
+<td style="width: 163px;">
+<p dir="auto">about.html</p>
 </td>
-<td style="vertical-align: top; width: 1.8229in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">My Works.</p>
+<td style="width: 145px;">
+<p dir="auto">About Me.</p>
 </td>
-<td style="vertical-align: top; width: 1.0875in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">Yes</p>
+<td style="width: 309.6px;">
+<p dir="auto">Yes</p>
 </td>
-<td style="vertical-align: top; width: 3.1166in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<ul style="direction: ltr; unicode-bidi: embed; margin-top: 0in; margin-bottom: 0in;">
-<ul style="direction: ltr; unicode-bidi: embed; margin-top: 0in; margin-bottom: 0in;" type="disc">
-<li style="margin-top: 0; margin-bottom: 0; vertical-align: middle;"><span style="font-family: Calibri; font-size: 11.0pt;">Hero-Section</span></li>
-<li style="margin-top: 0; margin-bottom: 0; vertical-align: middle;"><span style="font-family: Calibri; font-size: 11.0pt;">Work philosophy </span></li>
-<li style="margin-top: 0; margin-bottom: 0; vertical-align: middle;"><span style="font-family: Calibri; font-size: 11.0pt;">Overview of Portfolio in card form</span></li>
+<td style="width: 10px;">
+<ul dir="auto">
+<ul dir="auto" type="disc">
+<li>Hero-Section</li>
+<li>Introduction (Get to know)</li>
+<li>Work Experience</li>
+<li>Education</li>
+<li>Skills (soft and hard)</li>
+<li>Extra Information (Personal Information)</li>
 </ul>
 </ul>
 </td>
 </tr>
 <tr>
-<td style="vertical-align: top; width: 1.5291in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">--&gt; plantagotchi.html</p>
+<td style="width: 163px;">
+<p dir="auto">works.html</p>
 </td>
-<td style="vertical-align: top; width: 1.8229in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">Plantagotchi.</p>
+<td style="width: 145px;">
+<p dir="auto">My Works.</p>
 </td>
-<td style="vertical-align: top; width: 1.0875in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">No</p>
+<td style="width: 309.6px;">
+<p dir="auto">Yes</p>
 </td>
-<td style="vertical-align: top; width: 3.0972in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<ul style="direction: ltr; unicode-bidi: embed; margin-top: 0in; margin-bottom: 0in;">
-<ul style="direction: ltr; unicode-bidi: embed; margin-top: 0in; margin-bottom: 0in;" type="disc">
-<li style="margin-top: 0; margin-bottom: 0; vertical-align: middle;"><span style="font-family: Calibri; font-size: 11.0pt;">Explanation Text</span></li>
-<li style="margin-top: 0; margin-bottom: 0; vertical-align: middle;"><span style="font-family: Calibri; font-size: 11.0pt;">Pictures from the work</span></li>
+<td style="width: 10px;">
+<ul dir="auto">
+<ul dir="auto" type="disc">
+<li>Hero-Section</li>
+<li>Work philosophy</li>
+<li>Overview of Portfolio in card form</li>
 </ul>
 </ul>
 </td>
 </tr>
 <tr>
-<td style="vertical-align: top; width: 1.5104in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">--&gt; surfguard.html</p>
+<td style="width: 163px;">
+<ul>
+<li dir="auto">plantagotchi.html</li>
+</ul>
 </td>
-<td style="vertical-align: top; width: 1.8229in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">Surfguard.</p>
+<td style="width: 145px;">
+<p dir="auto">Plantagotchi.</p>
 </td>
-<td style="vertical-align: top; width: 1.0875in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">No</p>
+<td style="width: 309.6px;">
+<p dir="auto">No</p>
 </td>
-<td style="vertical-align: top; width: 3.1166in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<ul style="direction: ltr; unicode-bidi: embed; margin-top: 0in; margin-bottom: 0in;">
-<ul style="direction: ltr; unicode-bidi: embed; margin-top: 0in; margin-bottom: 0in;" type="disc">
-<li style="margin-top: 0; margin-bottom: 0; vertical-align: middle;"><span style="font-family: Calibri; font-size: 11.0pt;">Explanation Text</span></li>
-<li style="margin-top: 0; margin-bottom: 0; vertical-align: middle;"><span style="font-family: Calibri; font-size: 11.0pt;">Pictures from the work</span></li>
+<td style="width: 10px;">
+<ul dir="auto">
+<ul dir="auto" type="disc">
+<li>Explanation Text</li>
+<li>Pictures from the work</li>
 </ul>
 </ul>
 </td>
 </tr>
 <tr>
-<td style="vertical-align: top; width: 1.5104in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">--&gt; easyfleet.html</p>
+<td style="width: 163px;">
+<ul>
+<li dir="auto">surfguard.html</li>
+</ul>
 </td>
-<td style="vertical-align: top; width: 1.8229in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">Easyfleet.</p>
+<td style="width: 145px;">
+<p dir="auto">Surfguard.</p>
 </td>
-<td style="vertical-align: top; width: 1.0875in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">No</p>
+<td style="width: 309.6px;">
+<p dir="auto">No</p>
 </td>
-<td style="vertical-align: top; width: 3.1166in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<ul style="direction: ltr; unicode-bidi: embed; margin-top: 0in; margin-bottom: 0in;">
-<ul style="direction: ltr; unicode-bidi: embed; margin-top: 0in; margin-bottom: 0in;" type="disc">
-<li style="margin-top: 0; margin-bottom: 0; vertical-align: middle;"><span style="font-family: Calibri; font-size: 11.0pt;">Explanation Text</span></li>
-<li style="margin-top: 0; margin-bottom: 0; vertical-align: middle;"><span style="font-family: Calibri; font-size: 11.0pt;">Pictures from the work</span></li>
+<td style="width: 10px;">
+<ul dir="auto">
+<ul dir="auto" type="disc">
+<li>Explanation Text</li>
+<li>Pictures from the work</li>
 </ul>
 </ul>
 </td>
 </tr>
 <tr>
-<td style="vertical-align: top; width: 1.5104in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">--&gt; bslikealocal.html</p>
+<td style="width: 163px;">
+<ul>
+<li dir="auto">easyfleet.html</li>
+</ul>
 </td>
-<td style="vertical-align: top; width: 1.8423in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">Braunschweig like a local.</p>
+<td style="width: 145px;">
+<p dir="auto">Easyfleet.</p>
 </td>
-<td style="vertical-align: top; width: 1.0875in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">No</p>
+<td style="width: 309.6px;">
+<p dir="auto">No</p>
 </td>
-<td style="vertical-align: top; width: 3.0972in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<ul style="direction: ltr; unicode-bidi: embed; margin-top: 0in; margin-bottom: 0in;">
-<ul style="direction: ltr; unicode-bidi: embed; margin-top: 0in; margin-bottom: 0in;" type="disc">
-<li style="margin-top: 0; margin-bottom: 0; vertical-align: middle;"><span style="font-family: Calibri; font-size: 11.0pt;">Explanation Text</span></li>
-<li style="margin-top: 0; margin-bottom: 0; vertical-align: middle;"><span style="font-family: Calibri; font-size: 11.0pt;">Pictures from the work</span></li>
+<td style="width: 10px;">
+<ul dir="auto">
+<ul dir="auto" type="disc">
+<li>Explanation Text</li>
+<li>Pictures from the work</li>
 </ul>
 </ul>
 </td>
 </tr>
 <tr>
-<td style="vertical-align: top; width: 1.5104in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">contact.html</p>
+<td style="width: 163px;">
+<ul>
+<li dir="auto">bslikealocal.html</li>
+</ul>
 </td>
-<td style="vertical-align: top; width: 1.8229in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">&nbsp;</p>
+<td style="width: 145px;">
+<p dir="auto">Braunschweig like a local.</p>
 </td>
-<td style="vertical-align: top; width: 1.0875in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">Yes</p>
+<td style="width: 309.6px;">
+<p dir="auto">No</p>
 </td>
-<td style="vertical-align: top; width: 3.1166in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<ul style="direction: ltr; unicode-bidi: embed; margin-top: 0in; margin-bottom: 0in;">
-<ul style="direction: ltr; unicode-bidi: embed; margin-top: 0in; margin-bottom: 0in;" type="disc">
-<li style="margin-top: 0; margin-bottom: 0; vertical-align: middle;"><span style="font-family: Calibri; font-size: 11.0pt;">Hero-Section</span></li>
-<li style="margin-top: 0; margin-bottom: 0; vertical-align: middle;"><span style="font-family: Calibri; font-size: 11.0pt;">Contact information</span></li>
-<li style="margin-top: 0; margin-bottom: 0; vertical-align: middle;"><span style="font-family: Calibri; font-size: 11.0pt;">Contact formular</span></li>
-<li style="margin-top: 0; margin-bottom: 0; vertical-align: middle;"><span style="font-family: Calibri; font-size: 11.0pt;">Map showing where to find me</span></li>
+<td style="width: 10px;">
+<ul dir="auto">
+<ul dir="auto" type="disc">
+<li>Explanation Text</li>
+<li>Pictures from the work</li>
 </ul>
 </ul>
 </td>
 </tr>
 <tr>
-<td style="vertical-align: top; width: 1.5104in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">legal.html</p>
+<td style="width: 163px;">
+<p dir="auto">contact.html</p>
 </td>
-<td style="vertical-align: top; width: 1.8229in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">Legal Information.</p>
+<td style="width: 145px;">
+<p dir="auto">&nbsp;</p>
 </td>
-<td style="vertical-align: top; width: 1.1652in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">No</p>
+<td style="width: 309.6px;">
+<p dir="auto">Yes</p>
 </td>
-<td style="vertical-align: top; width: 3.0388in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">Legal information</p>
+<td style="width: 10px;">
+<ul dir="auto">
+<ul dir="auto" type="disc">
+<li>Hero-Section</li>
+<li>Contact information</li>
+<li>Contact formular</li>
+<li>Map showing where to find me</li>
+</ul>
+</ul>
 </td>
 </tr>
 <tr>
-<td style="vertical-align: top; width: 1.5104in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">privacypolicy.html</p>
+<td style="width: 163px;">
+<p dir="auto">legal.html</p>
 </td>
-<td style="vertical-align: top; width: 1.8229in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">Privacy Policy.</p>
+<td style="width: 145px;">
+<p dir="auto">Legal Information.</p>
 </td>
-<td style="vertical-align: top; width: 1.1652in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">No</p>
+<td style="width: 309.6px;">
+<p dir="auto">No</p>
 </td>
-<td style="vertical-align: top; width: 3.0388in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;">
-<p style="margin: 0in; font-family: Calibri; font-size: 11.0pt;">Privacy Policy.</p>
+<td style="width: 10px;">
+<p dir="auto">Legal information</p>
+</td>
+</tr>
+<tr>
+<td style="width: 163px;">
+<p dir="auto">privacypolicy.html</p>
+</td>
+<td style="width: 145px;">
+<p dir="auto">Privacy Policy.</p>
+</td>
+<td style="width: 309.6px;">
+<p dir="auto">No</p>
+</td>
+<td style="width: 10px;">
+<p dir="auto">Privacy Policy.</p>
 </td>
 </tr>
 </tbody>
 </table>
 </div>
-<!-- Comments are visible in the HTML source only -->
