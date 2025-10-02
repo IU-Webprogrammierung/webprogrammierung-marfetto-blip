@@ -1,112 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marvin Hermann | UX/UI Designer</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marvin Hermann | UX/UI Designer</title>
 </head>
 <body>
-    <header>
-        <nav aria-label="Main navigation">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#works">Work</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#legal">Legal Information</a></li>
-                <li><a href="#privacy">Privacy Policy</a></li>
-            </ul>
-        </nav>
-        <h1 id="home">I’m Marvin Hermann.<br>A passionate UX/UI-Designer.</h1>
-        <figure>
-            <figcaption>Portrait of Marvin Hermann</figcaption>
-            <img src="portrait.jpg" alt="Portrait of Marvin Hermann" width="120" height="100">
+  <header>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#home">Home.</a></li>
+        <li><a href="#about">About.</a></li>
+        <li><a href="#works">Work.</a></li>
+        <li><a href="#contact">Contact.</a></li>
+        <li><a href="#legal">Legal Information</a></li>
+        <li><a href="#privacy">Privacy Policy</a></li>
+      </ul>
+    </nav>
+    <h3 id="home">I’m Marvin Hermann.</h3>
+    <h1>A passionate UX/UI-Designer.</h1>
+    <figure>
+      <figcaption>Portrait of Marvin Hermann</figcaption>
+      <img src="portrait.jpg" alt="Portrait of Marvin Hermann" width="120" height="100" />
+    </figure>
+  </header>
+
+  <main>
+    <section id="about" aria-label="About Me">
+      <h4>Get to know something</h4>
+      <h2>About<br/>Me.</h2>
+      <p>As a junior UX designer, I develop user-centered digital solutions that meet both business goals and user needs.</p>
+      <p>My passion is to transform complex problems into simple, intuitive, and accessible designs. I combine strategic thinking with creative problem solving.</p>
+      <p><a href="#learn-more" aria-label="Learn more about Marvin Hermann">Learn More &gt;</a></p>
+      <figure>
+        <figcaption>About Me Image</figcaption>
+        <img src="about-image.jpg" alt="About Me Image" width="120" height="100" />
+      </figure>
+    </section>
+
+    <section id="works" aria-label="My Works">
+      <h4>Take a look at</h4>
+      <h2>My<br/>Works.</h2>
+      <p>A collection of projects that showcase my passion for creating beautiful, functional, and user-centered digital experiences.</p>
+      <p><a href="#explore" aria-label="Explore Marvin Hermann's works">Explore &gt;</a></p>
+      <figure>
+        <figcaption>Work 1</figcaption>
+        <img src="work1.jpg" alt="Project work 1" width="120" height="100" />
+      </figure>
+      <figure>
+        <figcaption>Work 2</figcaption>
+        <img src="work2.jpg" alt="Project work 2" width="120" height="100" />
+      </figure>
+      <figure>
+        <figcaption>Work 3</figcaption>
+        <img src="work3.jpg" alt="Project work 3" width="120" height="100" />
+      </figure>
+    </section>
+
+    <section id="skills" aria-label="My Skills">
+      <h4>I would like to show you</h4>
+      <h2>My<br/>Skills.</h2>
+      <section class="skills-container" aria-label="Image and cards container">
+        <figure class="skills-image">
+          <img src="skills.jpg" alt="Skills image" width="120" height="100" />
+          <figcaption>Skills Image</figcaption>
         </figure>
-    </header>
+        <ul class="card-container" role="list">
+          <li class="card">
+            <h3>
+              <strong>01.<br /><br />WEB DESIGN</strong><br />
+            </h3>
+            Designing responsive websites and web applications that convert visitors into customers while maintaining excellent user experience across all devices.
+          </li>
+          <li class="card">
+            <h3>
+              <strong>02.<br /><br />PROTOTYPING</strong><br />
+            </h3>
+            Creating interactive prototypes for validating ideas and letting users and stakeholders experience the website’s flow and functionality.
+          </li>
+          <li class="card">
+            <h3>
+              <strong>03.<br /><br />UX RESEARCH</strong><br />
+            </h3>
+            Understanding the users through research and data analysis to create design strategies that align with business goals and user needs.
+          </li>
+        </ul>
+      </section>
+    </section>
 
-    <main>
-        <section id="about" aria-label="About Me">
-            <h2>Get to know something<br>About<br>Me.</h2>
-            <p>As a junior UX designer, I develop user-centered digital solutions that meet both business goals and user needs.</p>
-            <p>My passion is to transform complex problems into simple, intuitive, and accessible designs. I combine strategic thinking with creative problem solving.</p>
-            <p><a href="#learn-more" aria-label="Learn more about Marvin Hermann">Learn More &gt;</a></p>
-            <figure>
-                <figcaption>About Me Image</figcaption>
-                <img src="about-image.jpg" alt="About Me Image" width="120" height="100">
-            </figure>
-        </section>
+    <section id="contact" aria-label="Contact">
+      <h4>Interested on working with me?</h4>
+      <h2>Write<br/>Me.</h2>
+      <p>Have a project in mind? I'd love to hear about it.<br />Send me a message and let's create something amazing together.</p>
+      <p><a href="mailto:marfetto@gmail.com" aria-label="Get in touch with Marvin Hermann">Get in touch &gt;</a></p>
+      <figure>
+        <figcaption>Contact Image</figcaption>
+        <img src="contact.jpg" alt="Contact image" width="120" height="100" />
+      </figure>
+    </section>
+  </main>
 
-        <section id="works" aria-label="My Works">
-            <h2>Take a look at<br>My<br>Works.</h2>
-            <p>A collection of projects that showcase my passion for creating beautiful, functional, and user-centered digital experiences.</p>
-            <p><a href="#explore" aria-label="Explore Marvin Hermann's works">Explore &gt;</a></p>
-            <figure>
-                <figcaption>Work 1</figcaption>
-                <img src="work1.jpg" alt="Project work 1" width="120" height="100">
-            </figure>
-            <figure>
-                <figcaption>Work 2</figcaption>
-                <img src="work2.jpg" alt="Project work 2" width="120" height="100">
-            </figure>
-            <figure>
-                <figcaption>Work 3</figcaption>
-                <img src="work3.jpg" alt="Project work 3" width="120" height="100">
-            </figure>
-        </section>
-
-        <section id="skills" aria-label="My Skills">
-            <h2>I would like to show you<br>My<br>Skills.</h2>
-            <ul>
-                <li>
-                    <strong>01. WEB DESIGN</strong><br>
-                    Designing responsive websites and web applications that convert visitors into customers while maintaining excellent user experience across all devices.
-                </li>
-                <li>
-                    <strong>02. PROTOTYPING</strong><br>
-                    Creating interactive prototypes for validating ideas and letting users and stakeholders experience the website’s flow and functionality.
-                </li>
-                <li>
-                    <strong>03. UX RESEARCH</strong><br>
-                    Understanding the users through research and data analysis to create design strategies that align with business goals and user needs.
-                </li>
-            </ul>
-            <figure>
-                <figcaption>Skills Image</figcaption>
-                <img src="skills.jpg" alt="Skills image" width="120" height="100">
-            </figure>
-        </section>
-
-        <section id="contact" aria-label="Contact">
-            <h2>Interested on working with me?<br>Write<br>Me.</h2>
-            <p>Have a project in mind? I'd love to hear about it.<br>Send me a message and let's create something amazing together.</p>
-            <p><a href="mailto:marfetto@gmail.com" aria-label="Get in touch with Marvin Hermann">Get in touch &gt;</a></p>
-            <figure>
-                <figcaption>Contact Image</figcaption>
-                <img src="contact.jpg" alt="Contact image" width="120" height="100">
-            </figure>
-        </section>
-    </main>
-
-    <footer>
-        <p><strong>Marvin.Hermann_UX</strong><br>
-        UX designer with a focus on user-centered, accessible and aesthetically appealing digital experiences.</p>
-        <nav aria-label="Footer navigation">
-            <ul>
-                <li><a href="#home">Home.</a></li>
-                <li><a href="#about">About.</a></li>
-                <li><a href="#works">Work.</a></li>
-                <li><a href="#contact">Contact.</a></li>
-                <li><a href="#legal">Legal Information</a></li>
-                <li><a href="#privacy">Privacy Policy</a></li>
-            </ul>
-        </nav>
-        <section aria-label="Keep in touch">
-            <h3>Keep in touch</h3>
-            <address>
-                <a href="mailto:marfetto@gmail.com">marfetto@gmail.com</a>
-            </address>
-        </section>
-        <p>&copy; 2025 Marvin Hermann. All rights reserved.</p>
-    </footer>
+  <footer>
+    <p>
+      <h4></h4><strong>Marvin.Hermann_UX</strong>
+      <br/>
+      <br/>
+      UX designer with a focus on user-centered, accessible and aesthetically appealing digital experiences.
+    </p>
+    <nav aria-label="Footer navigation">
+      <ul>
+        <li><a href="#home">Home.</a></li>
+        <li><a href="#about">About.</a></li>
+        <li><a href="#works">Work.</a></li>
+        <li><a href="#contact">Contact.</a></li>
+        <li><a href="#legal">Legal Information</a></li>
+        <li><a href="#privacy">Privacy Policy</a></li>
+      </ul>
+    </nav>
+    <section aria-label="Keep in touch">
+      <h4>Keep in touch</h4>
+      <address>
+        <a href="mailto:marfetto@gmail.com">marfetto@gmail.com</a>
+      </address>
+        <ul class="social-media-list" role="list">
+    <li>
+      <a href="https://instagram.com/marfetto" target="_blank" rel="noopener" aria-label="Instagram Profile">
+        <img src="icons/instagram.svg" alt="Instagram Logo" width="24" height="24" />
+      </a>
+    </li>
+    <li>
+      <a href="https://linkedin.com/in/TBD" target="_blank" rel="noopener" aria-label="LinkedIn Profile">
+        <img src="icons/linkedin.svg" alt="LinkedIn Logo" width="24" height="24" />
+      </a>
+    </li>
+    <li>
+      <a href="https://facebook.com/deinprofil" target="_blank" rel="noopener" aria-label="Facebook Profile">
+        <img src="icons/facebook.svg" alt="Facebook Logo" width="24" height="24" />
+      </a>
+    </li>
+    </ul>
+    </section>
+    <p>&copy; 2025 Marvin Hermann. All rights reserved.</p>
+  </footer>
 </body>
 </html>
