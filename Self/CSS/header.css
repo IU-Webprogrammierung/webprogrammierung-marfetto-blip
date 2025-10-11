@@ -1,0 +1,18 @@
+header {
+    padding: 100px 25px;
+    background-color: var(--color-main-red);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Skip-Link Pfeil: Größe, Wechsel beim Hover */
+.skip-link img {
+    width: 65px;
+    height: 50px;
+    transition: content 0.2s;
+}
+
+.skip-link:hover img {
+    content: url('/media/Home/arrow_white.png');
+}

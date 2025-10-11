@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;900&display=swap');
+
+:root {
+  --color-main-red: #FF6666;
+  --color-main-yellow: #FFD324;
+  --color-main-white: #FBFBFB;
+  --color-main-blue: #6F77F4;
+  --color-main-purple: #A96FF4;
+  --color-sub-blue: #C9D0E9;
+  --color-sub-green: #CFE6D7;
+  --color-sub-pink: #E6CFE2;
+  --color-sub-lightred: #FFC8C8;
+  --color-text-black: #3A3A3A;
+  --color-text-white: #FFFFFF;
+}
+
+body {
+  background: var(--color-main-white);
+  margin: 0;
+}
+
+.site-wrapper {
+  background: var(--color-main-white);
+  margin: 50px;
+  min-height: calc(100vh - 100px);
+}
+
+h1, h2, h3, h4, h5,
+p, .text-normal, .footer, .text-small {
+  color: var(--color-text-black);
+}
+
+h1 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 800;
+  font-size: 90px;
+  line-height: 1em;
+}
+
+h2 {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 800;
+  font-size: 65px;
+  line-height: 1em;
+}
+
+h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 0.8em;
+}
+
+h4 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 0.8em;
+}
+
+h5, .fat-text {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1em;
+}
+
+p, .text-normal {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1em;
+}
+
+.footer, .text-small {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.white-text, .on-color-section {
+  color: var(--color-text-white) !important;
+}
+
+a { color: var(--color-main-blue); }
+a:hover { color: var(--color-main-purple); }
+
+.button-primary {
+  background-color: var(--color-main-red);
+  color: var(--color-text-white);
+}
+.button-secondary {
+  background-color: var(--color-main-yellow);
+  color: var(--color-text-black);
+}
+
+.card-blue { background-color: var(--color-sub-blue); }
+.card-green { background-color: var(--color-sub-green); }
+.card-pink { background-color: var(--color-sub-pink); }
+.card-lightred { background-color: var(--color-sub-lightred); }
+
+.eyebrow {
+  font-family: 'Playfair Display', serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 0.8em;
+  text-transform: capitalize;
+  color: var(--color-text-black);
+  display: block;
+  letter-spacing: 0.1em;
+  margin-top: 0;
+  margin-bottom: 0.1em;
+  padding: 0;
+}
+
+@media (max-width: 1024px) {
+  .site-wrapper {
+    margin: 24px;
+    min-height: calc(100vh - 48px);
+  }
+  h1 { font-size: 65px; }
+  h2 { font-size: 40px; }
+  h3 { font-size: 25px; }
+  h4 { font-size: 18px; }
+  h5, .fat-text { font-size: 18px; }
+  p, .text-normal { font-size: 18px; }
+  .footer, .text-small { font-size: 14px; }
+  .eyebrow {
+    font-size: 18px;
+    margin-bottom: 0.1em;
+    color: var(--color-text-black);
+  }
+}
+
+@media (max-width: 767px) {
+  .site-wrapper {
+    margin: 20px;
+    min-height: calc(100vh - 40px);
+  }
+  h1 { font-size: 40px; }
+  h2 { font-size: 30px; }
+  h3 { font-size: 20px; }
+  h4 { font-size: 18px; }
+  h5, .fat-text { font-size: 18px; }
+  p, .text-normal { 
+    font-size: 16px; 
+    line-height: 1.5em; 
+  }
+  .footer, .text-small { font-size: 14px; }
+  .eyebrow {
+    font-size: 18px;
+    line-height: 0.8em;
+    margin-bottom: 0.1em;
+    color: var(--color-text-black);
+  }
+}
