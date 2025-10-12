@@ -43,6 +43,7 @@ h2 {
   font-weight: 800;
   font-size: 65px;
   line-height: 1em;
+  margin-top: 10px;
 }
 
 h3 {
@@ -113,6 +114,46 @@ a:hover { color: var(--color-main-purple); }
   margin-bottom: 0.1em;
   padding: 0;
 }
+.software-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.software-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+  font-size: 1.1em;
+}
+
+.label {
+  flex: 1;
+}
+
+.icons {
+  display: flex;
+  gap: 0.3em;
+}
+
+.filled, .empty {
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  border: 2px solid #222;
+  display: inline-block;
+}
+
+.filled {
+  background: #222;
+}
+
+.empty {
+  background: #fff;
+}
+
 
 @media (max-width: 1024px) {
   .site-wrapper {
@@ -155,3 +196,5 @@ a:hover { color: var(--color-main-purple); }
     color: var(--color-text-black);
   }
 }
+
+
