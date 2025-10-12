@@ -1,18 +1,125 @@
+/* Basis Header */
 header {
-    padding: 100px 25px;
-    background-color: var(--color-main-red);
-    display: flex;
-    justify-content: center;
-    text-align: center;
+  padding: 100px 25px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Hintergrundfarbe pro Seite via body Klasse */
+body.page-index header {
+  background-color: var(--color-main-red);
+}
+
+body.page-about header {
+  background-color: var(--color-main-blue);
+}
+
+body.page-works header {
+  background-color: var(--color-main-purple);
 }
 
 /* Skip-Link Pfeil: Größe, Wechsel beim Hover */
 .skip-link img {
-    width: 65px;
-    height: 50px;
-    transition: content 2.0s;
+  width: 65px;
+  height: 50px;
+  transition: content 2.0s;
+}
+
+/* Pfeil nur auf index Seite sichtbar */
+body.page-index .skip-link img {
+  display: inline;
+}
+
+body.page-about .skip-link img,
+body.page-works .skip-link img {
+  display: none;
 }
 
 .skip-link:hover img {
-    content: url('/media/Home/arrow_white.png');
+  content: url('/media/Home/arrow_white.png');
 }
+
+/* Burger Menü Styles */
+.burger-toggle {
+  display: none;
+}
+
+.burger-button {
+  cursor: pointer;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 40px;
+  color: var(--color-text-black);
+  z-index: 1001;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.material-symbols-rounded {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 40;
+  user-select: none;
+  transition: opacity 0.3s ease;
+  display: inline-block;
+}
+
+/* Standardzustand: Menü (Burger) Icon anzeigen */
+.burger-button .material-symbols-rounded::after {
+  content: 'menu';
+  font-family: 'Material Symbols Rounded';
+}
+
+}
+
+/* Wenn Menü geöffnet (Checkbox checked), Menü Icon ausblenden */
+.burger-toggle:checked + .burger-button .material-symbols-rounded {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Wenn Menü geöffnet, Close Icon als Pseudoelement anzeigen */
+.burger-toggle:checked + .burger-button::before {
+  content: 'close';
+  font-family: 'Material Symbols Rounded';
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 40;
+  position: absolute;
+  font-size: 40px;
+  color: var(--color-text-black);
+  user-select: none;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Overlay Menü */
+.nav-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0,0,0,0.9);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  flex-direction: column;
+}
+
+.burger-toggle:checked ~ .nav-overlay {
+  display: flex;
+}
+
+.nav-overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: white;
+  text-align: center;
+  width: 100
