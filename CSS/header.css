@@ -10,7 +10,7 @@ header {
 .skip-link img {
     width: 65px;
     height: 50px;
-    transition: content 0.2s;
+    transition: content 2.0s;
 }
 
 .skip-link:hover img {

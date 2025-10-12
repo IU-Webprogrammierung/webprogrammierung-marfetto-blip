@@ -14,10 +14,11 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
 </head>
-<body>
-    <div class="site-wrapper">
+<body class="page-index">
+    <main class="site-wrapper">
         <header>
-            <div class="header_bar"></div>
+            <span aria-hidden="true" class="header_bar"></span>
+
             <logo class="header_logo">
                 <a href="index.html">MH</a>
             </logo>
@@ -29,104 +30,101 @@
                     <li><a href="contact.html">Contact.</a></li>
                 </ul>
             </nav>
-            <div class="header_content">
+            <section class="header_content">
                 <h3>I'm Marvin Hermann.</h3>
                 <h1>A Passionate<br>UX/UI Designer.</h1>
                 <a href="#about" class="skip-link" aria-label="Scroll down to About section">
                     <img src="/media/Home/Arrow_black.png" alt="Scroll down arrow" width="65" height="50">
                 </a>
-            </div>
+            </section>
         </header>
 
-        <main>
-            <section id="about" aria-labelledby="about-title">
-                <article class="about-text">
-                    <span class="eyebrow">Get to know something</span>
-                    <h2 id="about-title">About<br/>Me.</h2>
-                    <p>As a junior UX designer, I develop user-centered digital solutions that meet both business goals and user needs.</p>
-                    <p>My passion is to transform complex problems into simple, intuitive, and accessible designs. I combine strategic thinking with creative problem solving.</p>
-                    <p><a href="#learn-more" aria-label="Learn more about Marvin Hermann">Learn More &gt;</a></p>
+        <section id="about" aria-labelledby="about-title">
+            <article class="about-text">
+                <span class="eyebrow">Get to know something</span>
+                <h2 id="about-title">About<br/>Me.</h2>
+                <p>As a junior UX designer, I develop user-centered digital solutions that meet both business goals and user needs.</p>
+                <p>My passion is to transform complex problems into simple, intuitive, and accessible designs. I combine strategic thinking with creative problem solving.</p>
+                <p><a href="#learn-more" aria-label="Learn more about Marvin Hermann">Learn More &gt;</a></p>
+            </article>
+            <figure class="about-image">
+                <img src="/media/Home/Marvin_vespa.jpg" alt="Portrait of Marvin on his Vespa" width="100" height="100" />
+            </figure>
+        </section>
+
+        <section id="works" aria-labelledby="works-title">
+            <article class="works-text">
+                <span class="eyebrow">Take a look at</span>
+                <h2 id="works-title">My<br/>Works.</h2>
+                <p>A collection of projects that showcase my passion for creating beautiful, functional, and user-centered digital experiences.</p>
+                <p><a href="#explore" aria-label="Explore Marvin Hermann's works">Explore &gt;</a></p>
+            </article>
+            <figure class="works_grid">
+                <img src="/media/Works_grid/Arananas_main.png" alt="Arananas" width="100" height="100" />
+                <img src="/media/Works_grid/BS_main.png" alt="BS like a local" width="100" height="100" />
+                <img src="/media/Works_grid/Plantagotchi_main.png" alt="Plantagotchi" width="100" height="100" />
+                <img src="/media/Works_grid/Surf Guard_main.png" alt="Surf Guard" width="100" height="100" />
+            </figure>
+        </section>
+
+        <section id="skills" aria-labelledby="skills-title">
+            <article class="skills-text">
+                <span class="eyebrow">I would like to show you</span>
+                <h2 id="skills-title">My<br/>Skills.</h2>
+            </article>
+            <section class="flex_container" aria-label="Main skills">
+                <article class="card">
+                    <h5>01<br/>WEBDESIGN</h5>
+                    <p>Designing responsive websites and web applications that convert visitors into customers while maintaining excellent user experience across all devices.</p>
                 </article>
-                <figure class="about-image">
-                    <img src="/media/Home/Marvin_vespa.jpg" alt="Portrait of Marvin on his Vespa" width="100" height="100" />
-                </figure>
-            </section>
-
-
-
-            <section id="works" aria-labelledby="works-title">
-                <article class="works-text">
-                    <span class="eyebrow">Take a look at</span>
-                    <h2 id="works-title">My<br/>Works.</h2>
-                    <p>A collection of projects that showcase my passion for creating beautiful, functional, and user-centered digital experiences.</p>
-                    <p><a href="#explore" aria-label="Explore Marvin Hermann's works">Explore &gt;</a></p>
+                <article class="card">
+                    <h5>02<br/>PROTOTYPING</h5>
+                    <p>Creating interactive prototypes for validating ideas and letting users and stakeholders experience the website’s flow and functionality.</p>
                 </article>
-                <figure class="works_grid">
-                    <img src="/media/Works_grid/Arananas_main.png" alt="Arananas" width="100" height="100" />
-                    <img src="/media/Works_grid/BS_main.png" alt="BS like a local" width="100" height="100" />
-                    <img src="/media/Works_grid/Plantagotchi_main.png" alt="Plantagotchi" width="100" height="100" />
-                    <img src="/media/Works_grid/Surf Guard_main.png" alt="Surf Guard" width="100" height="100" />
-                </figure>
-            </section>
-
-            <section id="skills" aria-labelledby="skills-title">
-                <article class="skills-text">
-                    <span class="eyebrow">I would like to show you</span>
-                    <h2 id="skills-title">My<br/>Skills.</h2>
+                <article class="card">
+                    <h5>03<br/>UX RESEARCH</h5>
+                    <p>Understanding the users through research and data analysis to create design strategies that align with business goals and user needs.</p>
                 </article>
-               <div class="flex_container" aria-label="Main skills">
-                    <div class="card">
-                        <h5>01<br/>WEBDESIGN</h5>
-                        <p>Designing responsive websites and web applications that convert visitors into customers while maintaining excellent user experience across all devices.</p>
-                    </div>
-                    <div class="card">
-                        <h5>02<br/>PROTOTYPING</h5>
-                        <p>Creating interactive prototypes for validating ideas and letting users and stakeholders experience the website’s flow and functionality.</p>
-                    </div>
-                    <div class="card">
-                        <h5>03<br/>UX RESEARCH</h5>
-                        <p>Understanding the users through research and data analysis to create design strategies that align with business goals and user needs.</p>
-                    </div>
-                </div>
-                <figure class="skills-image">           
-                    <img src="TBD" alt="Skills Illustration" width="100" height="100" />
-                </figure>
             </section>
+            <figure class="skills-image">
+                <img src="TBD" alt="Skills Illustration" width="100" height="100" />
+            </figure>
+        </section>
 
-            <section id="contact" aria-labelledby="contact-title">
-                <article class="contact">
-                    <span class="eyebrow">Interested in working with me?</span>
-                    <h2 id="contact-title">Write<br/>Me.</h2>
-                    <p>Have a project in mind? I'd love to hear about it. Send me a message and let's create something amazing together.</p>
-                    <p><a href="#Get in touch" aria-label="Get in touch with Marvin Hermann">Get in touch &gt;</a></p>
-                </article>
-                <figure class="about-image">
-                    <img src="TBD" alt="Illustration of a mailbox" width="100" height="100" />
-                </figure>
-            </section>
-        </main>
-    </div>
+        <section id="contact" aria-labelledby="contact-title">
+            <article class="contact">
+                <span class="eyebrow">Interested in working with me?</span>
+                <h2 id="contact-title">Write<br/>Me.</h2>
+                <p>Have a project in mind? I'd love to hear about it. Send me a message and let's create something amazing together.</p>
+                <p><a href="#Get in touch" aria-label="Get in touch with Marvin Hermann">Get in touch &gt;</a></p>
+            </article>
+            <figure class="about-image">
+                <img src="TBD" alt="Illustration of a mailbox" width="100" height="100" />
+            </figure>
+        </section>
+    </main>
 </body>
+
 <footer class="footer">
-  <div class="footer_blue">
-  <div class="footer-main-content">
-    <div>
-      <span class="footer-initials" aria-label="Marvin Hermann">MH.</span>
-      <p class="footer-motto">let's create<br>something<br>amazing together.</p>
-    </div>
-    <nav class="footer-nav" aria-labelledby="footer-navigation">
-      <h2 id="footer-navigation" class="visually-hidden">Navigation</h2>
-      <ul>
-        <li><a href="#home">Home.</a></li>
-        <li><a href="#about">About.</a></li>
-        <li><a href="#work">Work.</a></li>
-        <li><a href="#contact">Contact.</a></li>
-        <li><a href="#legal">Legal Information</a></li>
-        <li><a href="#privacy">Privacy Policy</a></li>
-      </ul>
-    </nav>
-  </div>
-</div>
+  <section class="footer_blue">
+    <section class="footer-main-content">
+      <section>
+        <span class="footer-initials" aria-label="Marvin Hermann">MH.</span>
+        <p class="footer-motto">let's create<br>something<br>amazing together.</p>
+      </section>
+      <nav class="footer-nav" aria-labelledby="footer-navigation">
+        <h2 id="footer-navigation" class="visually-hidden">Navigation</h2>
+        <ul>
+          <li><a href="#home">Home.</a></li>
+          <li><a href="#about">About.</a></li>
+          <li><a href="#work">Work.</a></li>
+          <li><a href="#contact">Contact.</a></li>
+          <li><a href="#legal">Legal Information</a></li>
+          <li><a href="#privacy">Privacy Policy</a></li>
+        </ul>
+      </nav>
+    </section>  
+  </section>
   <aside class="footer_yellow" aria-labelledby="footer-contact-heading">
     <h2 id="footer-contact-heading" class="footer-contact-heading">Keep In Touch</h2>
     <ul class="footer-social">
@@ -141,5 +139,4 @@
 <div class="footer-bottom">
   <p>© 2025 Marvin Hermann. All rights reserved.</p>
 </div>
-
 </html>

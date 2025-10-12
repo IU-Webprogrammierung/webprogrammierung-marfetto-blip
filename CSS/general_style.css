@@ -17,7 +17,7 @@
 
 body {
   background: var(--color-main-white);
-  margin: 0;
+  margin: 0px;
 }
 
 .site-wrapper {
