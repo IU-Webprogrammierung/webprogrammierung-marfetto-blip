@@ -5,16 +5,20 @@ header {
   position: relative;
 }
 
-body.page-index header {
+body.page_index header {
   background-color: var(--color-main-red);
 }
 
-body.page-about header {
+body.page_about header {
   background-color: var(--color-main-blue);
 }
 
-body.page-works header {
+body.page_works header {
   background-color: var(--color-main-purple);
+}
+
+body.page_contact header {
+  background-color: var(--color-main-red);
 }
 
 .skip-link img {

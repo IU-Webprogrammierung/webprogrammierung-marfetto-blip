@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact. | Marvin Hermann_UXD</title>
+  <link rel="stylesheet" href="CSS/general_style.css" />
+  <link rel="stylesheet" href="CSS/header.css" />
+  <link rel="stylesheet" href="CSS/footer.css" />   
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded"/>
+</head>
+<body class="page_contact">
+  <header>
+    <span aria-hidden="true" class="header_bar"></span>
+    <header class="header-top-bar" role="banner" aria-label="Logo und Navigation">
+        <h4 class="header-logo">
+        <a href="index.html">MH</a>
+        </h4>
+        <input type="checkbox" id="burger-toggle" class="burger-toggle" aria-label="Toggle Menu" />
+        <label for="burger-toggle" class="burger-button">
+        <span class="material-symbols-rounded"></span>
+        </label>
+    </header>
+
+    <nav class="nav-overlay" aria-hidden="true">
+        <ul>
+        <li><a href="index.html" aria-current="page">Contact.</a></li>
+        <li><a href="about.html">About Me.</a></li>
+        <li><a href="projects.html">Works.</a></li>
+        <li><a href="contact.html">Contact.</a></li>
+        </ul>
+    </nav>
+
+    <section class="header_content">
+        <h3>Don’t Be A Stranger.</h3>
+        <h1>Contact Me.</h1>
+    </section>
+  </header>
+  <main class="site-wrapper">
+        <section id="introduction_contact" aria-labelledby="introduction-contact-title">
+            <article class="introduction_contact_text">
+                <span class="eyebrow">Get in touch</span>
+                <h2 id="introduction-contact-title">Let’s Work<br/>Together.</h2>
+                <p>Looking to collaborate? I’m always open to new projects, creative ideas, or interesting conversations. Feel free to reach out. I’ll get back to you as soon as possible! There are several ways to contact me that you can chose from.</p>
+            </article>
+            <section class="flex_container" aria-label="Contact options">
+                <article class="card">
+                    <h5><br/>MAIL</h5>
+                    <p><a href="mailto:marfetto@gmail.com">marfetto@gmail.com</a></p>
+                </article>
+                <article class="card">
+                    <h5><br/>PHONE</h5>
+                    <p>+49 163 1750445</p>
+                </article>
+                <article class="card">
+                    <h5><br/>SOCIAL MEDIA</h5>
+                    <ul class="social">
+                        <li><a href="https://www.facebook.com/" target="_blank" aria-label="Facebook" rel="noopener"><img src="/media/Footer/facebook_black.png" alt="Facebook" width="80" height="80  "></a></li>
+                        <li><a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn" rel="noopener"><img src="/media/Footer/Linkedin_black.png" alt="LinkedIn" width="80" height="80"></a></li>
+                        <li><a href="https://www.instagram.com/" target="_blank" aria-label="Instagram" rel="noopener"><img src="/media/Footer/Instagram_black.png" alt="Instagram" width="80" height="80"></a></li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <h5><br/>FIGMA</h5>
+                    <p><a href="https://www.figma.com/@marvin.hermann@vwfs.com" target="_blank" aria-label="Figma_Profile" rel="noopener">marvin.hermann@vwfs.com</a></p>
+                </article>
+            </section>
+        </section>
+
+        <section class="contact_section" aria-labelledby="contact_title">
+            <figure class="contact_image">
+                <img src="TBD.jpg" alt="contact_image" />
+                <span class="image-placeholder">Image</span>
+            </figure>
+            <article class="contact_text">
+                <span class="eyebrow">There is one more way</span>
+                <h2 id="contact_title">Drop Me<br/>A Line.</h2>
+                <p>Have a question or want to start a project together? Simply fill out the form below. I'm looking forward to hearing from you!</p>
+            </article>
+            <section class="form-section" aria-labelledby="form-section-title">
+                <h2 id="form-section-title" class="visually-hidden">Contact Form</h2>
+                    <form class="contact-form">
+                        <div class="input-row">
+                            <label>
+                                <span class="visually-hidden">Full Name</span>
+                                <input type="text" placeholder="FULL NAME" name="fullname" required>
+                            </label>
+                            <label>
+                                <span class="visually-hidden">Email Address</span>
+                                <input type="email" placeholder="EMAIL ADDRESS" name="email" required>
+                            </label>
+                            <label>
+                                <span class="visually-hidden">Phone</span>
+                                <input type="tel" placeholder="PHONE" name="phone">
+                            </label>
+                        </div>
+                            <label class="textarea-label">
+                                <span class="visually-hidden">Message</span>
+                                <textarea name="message" rows="5" placeholder="MESSAGE" required></textarea>
+                            </label>
+                            <button type="submit" class="send-btn">Send &gt;</button>
+                    </form>
+            </section>
+        </section>
+  </main>
+  <footer class="footer">
+        <section class="footer_blue">
+            <section class="footer-main-content">
+                <section>
+                    <span class="footer-initials" aria-label="Marvin Hermann">MH.</span>
+                    <p class="footer-motto">let's create<br>something<br>amazing together.</p>
+                </section>
+                <nav class="footer-nav" aria-labelledby="footer-navigation">
+                    <h2 id="footer-navigation" class="visually-hidden">Navigation</h2>
+                    <ul>
+                        <li><a href="#home">Home.</a></li>
+                        <li><a href="#about">About.</a></li>
+                        <li><a href="#work">Work.</a></li>
+                        <li><a href="#contact">Contact.</a></li>
+                        <li><a href="#legal">Legal Information</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                    </ul>
+                </nav>
+            </section>  
+        </section>
+        <aside class="footer_yellow" aria-labelledby="footer-contact-heading">
+            <h2 id="footer-contact-heading" class="footer-contact-heading">Keep In Touch</h2>
+            <ul class="footer-social">
+                <li><a href="https://www.facebook.com/" target="_blank" aria-label="Facebook" rel="noopener"><img src="/media/Footer/facebook_black.png" alt="Facebook" width="44" height="44"></a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn" rel="noopener"><img src="/media/Footer/Linkedin_black.png" alt="LinkedIn" width="44" height="44"></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank" aria-label="Instagram" rel="noopener"><img src="/media/Footer/Instagram_black.png" alt="Instagram" width="44" height="44"></a></li>
+            </ul>
+                <p class="footer-email"><a href="mailto:marfetto@gmail.com">marfetto@gmail.com</a></p>
+        </aside>
+ </footer>
+</body>
+    <div class="footer-bottom">
+        <p>© 2025 Marvin Hermann. All rights reserved.</p>
+    </div>
+</html>
