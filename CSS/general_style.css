@@ -11,13 +11,14 @@
   --color-sub-green: #CFE6D7;
   --color-sub-pink: #E6CFE2;
   --color-sub-lightred: #FFC8C8;
+  --color-sub-lightblue: #7575ED;
   --color-text-black: #3A3A3A;
   --color-text-white: #FFFFFF;
 }
 
 body {
   background: var(--color-main-white);
-  margin: 50px;
+  margin: 50px 50px 0 50px;
 }
 
 .site-wrapper {

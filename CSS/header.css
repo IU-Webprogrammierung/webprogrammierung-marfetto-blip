@@ -21,6 +21,10 @@ body.page_contact header {
   background-color: var(--color-main-red);
 }
 
+body.page_legal header {
+  background-color: var(--color-main-blue);
+}
+
 .skip-link img {
   width: 65px;
   height: 50px;
