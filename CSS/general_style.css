@@ -17,12 +17,11 @@
 
 body {
   background: var(--color-main-white);
-  margin: 0px;
+  margin: 50px;
 }
 
 .site-wrapper {
   background: var(--color-main-white);
-  margin: 50px;
   min-height: calc(100vh - 100px);
 }
 
@@ -154,7 +153,7 @@ a:hover { color: var(--color-main-purple); }
   background: #fff;
 }
 
-
+/* Media Query für Tablet */
 @media (max-width: 1024px) {
   .site-wrapper {
     margin: 24px;
@@ -174,6 +173,7 @@ a:hover { color: var(--color-main-purple); }
   }
 }
 
+/* Media Query für Smartphone */
 @media (max-width: 767px) {
   .site-wrapper {
     margin: 20px;

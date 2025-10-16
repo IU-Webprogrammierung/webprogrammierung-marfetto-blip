@@ -155,3 +155,38 @@ body.page-works .skip-link img {
   color: var(--color-text-white);
 
 }
+
+/* Media Query für Desktop */
+@media screen and (min-width: 1025px) {
+    body.page_index header {
+        min-height: 923px;
+    }
+    body.page_about header,
+    body.page_works header,
+    body.page_contact header {
+        min-height: 500px;
+    }
+}
+
+/* Media Query für Tablet */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    body.page_index header {
+        min-height: 886px;
+    }
+    body.page_about header,
+    body.page_works header,
+    body.page_contact header {
+        min-height: 500px;
+    }
+}
+
+/* Media Query für Smartphone */
+@media screen and (max-width: 767px) {
+    body.page_index header {
+        min-height: 850px;
+    }
+    body.page_about header,
+    body.page_works header,
+    body.page_contact header {
+        min-height: 750px;
+}
