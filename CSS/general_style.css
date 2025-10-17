@@ -154,10 +154,103 @@ a:hover { color: var(--color-main-purple); }
   background: #fff;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  gap: 0px 0px; 
+  height: 4em; 
+}
+
+/* Section mit Bild links oder rechts */
+.sec_img_left {
+  display: flex;
+  gap: 2rem;
+  padding: 0; /* oben, rechts, unten, links */
+}
+
+.sec_img_right {
+  display: flex;
+  gap: 2rem;
+  padding: 0; /* oben, rechts, unten, links */
+}
+
+/* Section Bild erst ab Smartphone unter oder über Text */
+.no-tablet-break {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+  flex-direction: row;
+}
+
+.no-tablet-break.sec_img_right {
+  flex-direction: row-reverse;
+}
+
+/* Section ohne Bild */
+.sec_no_img {
+  padding: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Generelle Regeln für Bild- und Textcontainer */
+.txt {
+  flex: 1 1 50%;
+  margin: 2rem;
+}
+
+.img {
+  flex: 1 1 50%;
+  margin: 0rem;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Farbvarianten über deine CSS-Variablen, kurze Klassen */
+.bg-1 { background: var(--color-main-white); }
+.bg-2 { background: var(--color-sub-green); }
+.bg-3 { background: var(--color-sub-pink); }
+.bg-4 { background: var(--color-sub-lightred); }
+
+/* Grid für Bilder*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.grid-items img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Media Query für Desktop */
+@media (min-width: 1025px) {
+  .sec_img_left {
+    flex-direction: row; /* Bild links */
+  }
+  .sec_img_right {
+    flex-direction: row-reverse; /* Bild rechts */
+  }
+}
+
 /* Media Query für Tablet */
 @media (max-width: 1024px) {
-  .site-wrapper {
+  body {
     margin: 24px;
+  }
+  .site-wrapper {
     min-height: calc(100vh - 48px);
   }
   h1 { font-size: 65px; }
@@ -172,22 +265,30 @@ a:hover { color: var(--color-main-purple); }
     margin-bottom: 0.1em;
     color: var(--color-text-black);
   }
+  .sec_img_left {
+    padding: 0;
+  }
+  .sec_img_right {
+    padding: 0;
+  }
 }
 
 /* Media Query für Smartphone */
 @media (max-width: 767px) {
-  .site-wrapper {
+  body {
     margin: 20px;
-    min-height: calc(100vh - 40px);
   }
-  h1 { font-size: 40px; }
-  h2 { font-size: 30px; }
-  h3 { font-size: 20px; }
-  h4 { font-size: 18px; }
-  h5, .fat-text { font-size: 18px; }
-  p, .text-normal { 
-    font-size: 16px; 
-    line-height: 1.5em; 
+  .site-wrapper {
+    min-height: calc(100vh - 40px);
+    }
+    h1 { font-size: 40px; }
+    h2 { font-size: 30px; }
+    h3 { font-size: 20px; }
+    h4 { font-size: 18px; }
+    h5, .fat-text { font-size: 18px; }
+    p, .text-normal { 
+      font-size: 16px; 
+      line-height: 1.5em; 
   }
   .footer, .text-small { font-size: 14px; }
   .eyebrow {
@@ -196,6 +297,19 @@ a:hover { color: var(--color-main-purple); }
     margin-bottom: 0.1em;
     color: var(--color-text-black);
   }
+  /* Section Layout Smartphone*/
+  .sec_img_left, .sec_img_right {
+    flex-direction: column; /* Bild über bzw. unter Text */
+    padding: 0rem;
+  }
+  .img {
+    margin: 0;  
+    max-width: 100%;
+    height: auto;
+    width: 100%;     
+  }
+  .no-tablet-break {
+    flex-direction: column;
+  }
 }
-
 
