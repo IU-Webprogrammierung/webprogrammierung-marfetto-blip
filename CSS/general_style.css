@@ -71,7 +71,7 @@ p, .text-normal {
   font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 1em;
+  line-height: 1.5em;
 }
 
 .footer, .text-small {
@@ -109,9 +109,8 @@ a:hover { color: var(--color-main-purple); }
   text-transform: capitalize;
   color: var(--color-text-black);
   display: block;
-  letter-spacing: 0.1em;
   margin-top: 0;
-  margin-bottom: 0.1em;
+  margin-bottom: 1em;
   padding: 0;
 }
 .software-list {
@@ -205,7 +204,7 @@ img {
 /* Generelle Regeln für Bild- und Textcontainer */
 .txt {
   flex: 1 1 50%;
-  margin: 2rem;
+  margin: clamp(0.2rem, 4vw, 2rem);
 }
 
 .img {
@@ -214,9 +213,21 @@ img {
   max-width: 100%;
   height: auto;
   object-fit: cover;
+  display: flex;
 }
 
-/* Farbvarianten über deine CSS-Variablen, kurze Klassen */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Farbvarianten der Sections */
 .bg-1 { background: var(--color-main-white); }
 .bg-2 { background: var(--color-sub-green); }
 .bg-3 { background: var(--color-sub-pink); }
@@ -233,16 +244,6 @@ img {
   width: 100%;
   height: auto;
   display: block;
-}
-
-/* Media Query für Desktop */
-@media (min-width: 1025px) {
-  .sec_img_left {
-    flex-direction: row; /* Bild links */
-  }
-  .sec_img_right {
-    flex-direction: row-reverse; /* Bild rechts */
-  }
 }
 
 /* Media Query für Tablet */
@@ -262,7 +263,6 @@ img {
   .footer, .text-small { font-size: 14px; }
   .eyebrow {
     font-size: 18px;
-    margin-bottom: 0.1em;
     color: var(--color-text-black);
   }
   .sec_img_left {
@@ -271,7 +271,7 @@ img {
   .sec_img_right {
     padding: 0;
   }
-}
+  }
 
 /* Media Query für Smartphone */
 @media (max-width: 767px) {
@@ -294,13 +294,13 @@ img {
   .eyebrow {
     font-size: 18px;
     line-height: 0.8em;
-    margin-bottom: 0.1em;
     color: var(--color-text-black);
   }
   /* Section Layout Smartphone*/
   .sec_img_left, .sec_img_right {
     flex-direction: column; /* Bild über bzw. unter Text */
     padding: 0rem;
+    gap: clamp(0.5rem, 2vw, 2rem);
   }
   .img {
     margin: 0;  
