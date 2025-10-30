@@ -75,6 +75,10 @@ p, .text-normal {
   line-height: 1.5em;
 }
 
+p[data-highlight="bold"] {
+  font-weight: bold;
+}
+
 .footer, .text-small {
   font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 300;
@@ -113,24 +117,6 @@ a:hover { color: var(--color-main-purple); }
   margin-top: 0;
   margin-bottom: 1em;
   padding: 0;
-}
-.software-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  width: 100%;
-}
-
-.software-list li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 1em;
-  font-size: 1.1em;
-}
-
-.label {
-  flex: 1;
 }
 
 .icons {
@@ -372,19 +358,100 @@ figure {
     "skills_img card_1 card_2 card_3"
     "skills_img card_4 card_5 card_6"; 
 }
-.card_4 { grid-area: card_4;
-  margin-left: clamp(0.2rem, 4vw, 2rem);
-  margin-right: clamp(0.2rem, 4vw, 2rem);
+  .card_4 {
+    grid-area: card_4;
+    margin-left: clamp(0.2rem, 4vw, 2rem);
+    margin-right: clamp(0.2rem, 4vw, 2rem);
+  }
+  .card_5 {
+    grid-area: card_5;
+    margin-left: clamp(0.2rem, 4vw, 2rem);
+    margin-right: clamp(0.2rem, 4vw, 2rem);
+  }
+  .card_6 {
+    grid-area: card_6;
+    margin-left: clamp(0.2rem, 4vw, 2rem);
+    margin-right: clamp(0.2rem, 4vw, 2rem);
+    margin-bottom: clamp(0.2rem, 4vw,2rem);
+  }
+
+.grid_container_hardfacts {
+  display: grid;
+  grid-template-columns: 1.4fr 0.6fr 0.6fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "grid_text_facts card_languages card_languages"
+    "grid_text_facts card_software card_software";
 }
-.card_5 { grid-area: card_5;
-  margin-left: clamp(0.2rem, 4vw, 2rem);
-  margin-right: clamp(0.2rem, 4vw, 2rem);
+
+.grid_text_facts {
+  margin: clamp(0.2rem, 4vw, 2rem);
+  margin-right: 10vw;
+  gap: 0px 0px;
 }
-.card_6 { grid-area: card_6;
-  margin-left: clamp(0.2rem, 4vw, 2rem);
-  margin-right: clamp(0.2rem, 4vw, 2rem);
-  margin-bottom: clamp(0.2rem, 4vw,2rem);
+
+.card_languages {  display: grid;
+  grid-template-columns: 0.3fr;
+  grid-template-rows: 1fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr;
+  gap: 0px 48px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header_language header_language"
+    "german german_level"
+    "english english_level"
+    "italian italian_level"
+    "spanish spanish_level"
+    "portuguese portuguese_level";
+  grid-area: card_languages;
+  margin: 32px
+
 }
+
+.header_language { grid-area: header_language; }
+.german { grid-area: german; }
+.english { grid-area: english; }
+.italian { grid-area: italian; }
+.spanish { grid-area: spanish; }
+.portuguese { grid-area: portuguese; }
+.german_level { grid-area: german_level; }
+.english_level { grid-area: english_level; }
+.italian_level { grid-area: italian_level; }
+.spanish_level { grid-area: spanish_level; }
+.portuguese_level { grid-area: portuguese_level; }
+
+.card_software {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  grid-template-rows: 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr;
+  gap: 0px 24px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header_software header_software"
+    "figma figma_level"
+    "premiere premiere_level"
+    "powerbi powerbi_level"
+    "videoscribe videoscribe_level"
+    "office office_level";
+  grid-area: card_software;
+  align-items: center;
+  margin: 32px
+}
+
+.header_software { grid-area: header_software; }
+.figma { grid-area: figma; }
+.premiere { grid-area: premiere; }
+.powerbi { grid-area: powerbi; }
+.videoscribe { grid-area: videoscribe; }
+.office { grid-area: office; }
+.figma_level { grid-area: figma_level; }
+.premiere_level { grid-area: premiere_level; }
+.powerbi_level { grid-area: powerbi_level; }
+.videoscribe_level { grid-area: videoscribe_level; }
+.office_level { grid-area: office_level;
+}
+
 
 /* Media Query für Tablet */
 @media (max-width: 1024px) {
@@ -488,6 +555,29 @@ figure {
     "skills_img card_5"
     "skills_img card_6";
   }
+
+.grid_container_hardfacts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 24px 24px;
+  grid-template-areas:
+      "grid_text_facts grid_text_facts"
+      "card_languages card_software";
+}
+
+.grid_text_facts {
+  grid-area: grid_text_facts;
+}
+.card_languages {
+  grid-area: card_languages;
+  margin: 32px
+}
+.card_software {
+  grid-area: card_software;
+  margin: 32px
+}
+
 }
 
 /* Media Query für Smartphone */
@@ -575,6 +665,29 @@ figure {
     "card_5"
     "card_6";
   }
+
+  .grid_container_hardfacts {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 0px 24px;
+  grid-template-areas:
+      "grid_text_facts"
+      "card_languages"
+      "card_software";
+}
+
+.grid_text_facts {
+  grid-area: grid_text_facts;
+}
+.card_languages {
+  grid-area: card_languages;
+  margin: 32px;
+}
+.card_software {
+  grid-area: card_software;
+  margin: 32px
+}
 }
 
   
