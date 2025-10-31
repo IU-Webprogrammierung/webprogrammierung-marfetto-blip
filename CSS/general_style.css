@@ -320,8 +320,8 @@ figure {
 }
 
 .social.media {
-  max-height: 35em;
-  max-width: 35em;
+  max-height: 15em;
+  max-width: 15em;
   grid-area: social;
   display: flex;
   align-items: center;
@@ -333,7 +333,7 @@ figure {
   
   display: block;
   list-style-type: disc;
-  margin: 0;
+  margin: 15px 15px 15px ;
   padding: 0;
   unicode-bidi: isolate;
 }
@@ -341,7 +341,7 @@ figure {
 .grid_container_experience {
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr; 
-  grid-template-rows: 0.2fr 1.5fr; 
+  grid-template-rows: 0.2fr 1fr; 
   gap: 0px 0px; 
   grid-template-areas: 
     "grid_text grid_text grid_text"
@@ -405,7 +405,7 @@ figure {
     "spanish spanish_level"
     "portuguese portuguese_level";
   grid-area: card_languages;
-  margin: 32px
+  margin: clamp(0.2rem, 4vw, 2rem)
 
 }
 
@@ -436,7 +436,7 @@ figure {
     "office office_level";
   grid-area: card_software;
   align-items: center;
-  margin: 32px
+  margin: clamp(0.2rem, 4vw, 2rem)
 }
 
 .header_software { grid-area: header_software; }
@@ -456,7 +456,6 @@ figure {
   display: grid;
   grid-template-columns: 1fr 1fr 1.5fr;
   grid-template-rows: auto;
-  padding
   gap: 0px 48px;
   grid-template-areas:
     "card_travel card_discover grid_text"
@@ -464,8 +463,40 @@ figure {
 }
 
 .card_travel, .card_sports, .card_discover, .card_growth {
-  margin: 0px 18px 18px 32px;
+  margin: clamp(0.2rem, 4vw, 2rem);
 }
+
+/* Contact Page */
+
+.grid_container_intro_contact {
+  display: grid;
+  margin: clamp(0.2rem, 4vw, 2rem)
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+  grid-template-rows: 0.5fr 0.5fr;
+  grid-template-areas:
+    "grid_text grid_text grid_text grid_text"
+    "card_mail card_phone card_social card_figma";
+}
+
+.card_mail, .card_phone, .card_social, .card_figma {
+  margin: clamp(0.2rem, 4vw, 2rem)
+}
+
+.card_social .social {
+  display: flex;
+  gap: 24px;
+  justify-content: left;
+  list-style: none; /* Liste ohne Punkt */
+  padding: 0;
+  margin: 0;
+}
+
+.card_social .social img {
+  width: clamp(38px, 10vw, 65px);
+  height: auto;
+  object-fit: contain; /* Bildverzerrung vermeiden */
+}
+
 
 /* Media Query für Tablet */
 @media (max-width: 1024px) {
@@ -585,23 +616,36 @@ figure {
 }
 .card_languages {
   grid-area: card_languages;
-  margin: 32px
+  margin: clamp(0.2rem, 4vw, 2rem);
 }
 .card_software {
   grid-area: card_software;
-  margin: 32px
+  margin: clamp(0.2rem, 4vw, 2rem);
 }
 
 .grid_container_moreabout {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  padding
   gap: 0px 48px;
   grid-template-areas:
     "grid_text grid_text"
     "card_travel card_discover"
     "card_sports card_growth";
+}
+
+/* Contact Page Tablet */
+
+.grid_container_intro_contact {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.2fr 0.1fr 0.1fr 0.1fr 0.1fr ;
+  grid-template-areas:
+    "grid_text"
+    "card_mail"
+    "card_phone"
+    "card_social"
+    "card_figma";
 }
 
 }
@@ -708,11 +752,11 @@ figure {
 }
 .card_languages {
   grid-area: card_languages;
-  margin: 32px;
+  margin: clamp(0.2rem, 4vw, 2rem);
 }
 .card_software {
   grid-area: card_software;
-  margin: 32px
+  margin: clamp(0.2rem, 4vw, 2rem);
 }
 
 .grid_container_moreabout {
