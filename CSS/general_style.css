@@ -378,7 +378,7 @@ figure {
 .grid_container_hardfacts {
   display: grid;
   grid-template-columns: 1.4fr 0.6fr 0.6fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: auto;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
@@ -394,7 +394,7 @@ figure {
 
 .card_languages {  display: grid;
   grid-template-columns: 0.3fr;
-  grid-template-rows: 1fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr;
+  grid-template-rows: auto;
   gap: 0px 48px;
   grid-auto-flow: row;
   grid-template-areas:
@@ -424,7 +424,7 @@ figure {
 .card_software {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
-  grid-template-rows: 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr;
+  grid-template-rows: 1fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr;
   gap: 0px 24px;
   grid-auto-flow: row;
   grid-template-areas:
@@ -452,6 +452,20 @@ figure {
 .office_level { grid-area: office_level;
 }
 
+.grid_container_moreabout {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.5fr;
+  grid-template-rows: auto;
+  padding
+  gap: 0px 48px;
+  grid-template-areas:
+    "card_travel card_discover grid_text"
+    "card_sports card_growth grid_text";
+}
+
+.card_travel, .card_sports, .card_discover, .card_growth {
+  margin: 0px 18px 18px 32px;
+}
 
 /* Media Query für Tablet */
 @media (max-width: 1024px) {
@@ -578,6 +592,18 @@ figure {
   margin: 32px
 }
 
+.grid_container_moreabout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  padding
+  gap: 0px 48px;
+  grid-template-areas:
+    "grid_text grid_text"
+    "card_travel card_discover"
+    "card_sports card_growth";
+}
+
 }
 
 /* Media Query für Smartphone */
@@ -687,6 +713,20 @@ figure {
 .card_software {
   grid-area: card_software;
   margin: 32px
+}
+
+.grid_container_moreabout {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  padding
+  gap: 0px 48px;
+  grid-template-areas:
+    "grid_text"
+    "card_travel"
+    "card_discover"
+    "card_sports"
+    "card_growth";
 }
 }
 
