@@ -54,6 +54,16 @@ body.page-works .skip-link img {
   right: 25px;
 }
 
+.header-top-bar_projects {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 25px;
+  left: 0px;
+  right: 25px;
+}
+
 .header-logo {
   font-weight: 700;
   font-size: 1.25rem;
