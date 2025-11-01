@@ -576,6 +576,18 @@ iframe {
     height: 50vh;
 }
 
+/* Works Page */
+.grid_container_worksoverview {
+  display: grid; 
+  grid-template-columns: 1fr 1fr 1fr; 
+  grid-template-rows: auto 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "grid_text grid_text grid_text"
+    "grid_img_1 grid_img_2 grid_img_3"
+    "grid_img_4 grid_img_5 grid_img_6";
+}
+
 
 /* Media Query für Tablet */
 @media (max-width: 1024px) {
@@ -756,6 +768,19 @@ iframe {
     "button";
 }
 
+/* Works Page Tablet */
+.grid_container_worksoverview {
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  grid-template-rows: auto 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "grid_text grid_text"
+    "grid_img_1 grid_img_2"
+    "grid_img_3 grid_img_4"
+    "grid_img_5 grid_img_6";
+}
+
 }
 
 /* Media Query für Smartphone */
@@ -880,6 +905,23 @@ iframe {
     "card_sports"
     "card_growth";
 }
+
+/* Works Page Smartphone */
+.grid_container_worksoverview {
+  display: grid; 
+  grid-template-columns: 1fr; 
+  grid-template-rows: auto 1fr 1fr 1fr 1fr 1fr 1fr; 
+  gap: 0px 0px; 
+  grid-template-areas: 
+    "grid_text"
+    "grid_img_1"
+    "grid_img_2"
+    "grid_img_3"
+    "grid_img_4"
+    "grid_img_5"
+    "grid_img_6";
+}
+
 }
 
   
