@@ -341,11 +341,11 @@ figure {
 .grid_container_experience {
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr; 
-  grid-template-rows: 0.2fr 1fr; 
+  grid-template-rows: auto 1fr; 
   gap: 0px 0px; 
   grid-template-areas: 
     "grid_text grid_text grid_text"
-    "card_1 card_2 card_3"; 
+    "card_1 card_2 card_3"
 }
 
 .grid_container_skills_ext {
@@ -377,13 +377,11 @@ figure {
 
 .grid_container_hardfacts {
   display: grid;
-  grid-template-columns: 1.4fr 0.6fr 0.6fr;
+  grid-template-columns: 0.2fr 0.8fr 1fr;
   grid-template-rows: auto;
   gap: 0px 0px;
-  grid-auto-flow: row;
   grid-template-areas:
-    "grid_text_facts card_languages card_languages"
-    "grid_text_facts card_software card_software";
+    "grid_text_facts card_languages card_software";
 }
 
 .grid_text_facts {
@@ -395,8 +393,7 @@ figure {
 .card_languages {  display: grid;
   grid-template-columns: 0.3fr;
   grid-template-rows: auto;
-  gap: 0px 48px;
-  grid-auto-flow: row;
+  gap: 0px 32px;
   grid-template-areas:
     "header_language header_language"
     "german german_level"
@@ -426,7 +423,6 @@ figure {
   grid-template-columns: 0.9fr 1.1fr;
   grid-template-rows: 1fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr;
   gap: 0px 24px;
-  grid-auto-flow: row;
   grid-template-areas:
     "header_software header_software"
     "figma figma_level"
