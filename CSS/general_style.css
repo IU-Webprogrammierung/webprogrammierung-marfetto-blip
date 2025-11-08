@@ -35,16 +35,14 @@ p, .text-normal, .footer, .text-small {
 h1 {
   font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 800;
-  /* max ~90px, min ~36px */
-  font-size: clamp(2.25rem, 5.5vw + 0.5rem, 5.625rem);
+  font-size: clamp(2.25rem, 5.5vw + 0.5rem, 5.625rem); /* max ~90px, min ~36px */
   line-height: 1em;
 }
 
 h2 {
   font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 800;
-  /* max ~65px, min ~28px */
-  font-size: clamp(1.75rem, 3.8vw + 0.4rem, 4.0625rem);
+  font-size: clamp(1.75rem, 3.8vw + 0.4rem, 4.0625rem); /* max ~65px, min ~28px */
   line-height: 1em;
   margin-top: 10px;
 }
@@ -52,32 +50,28 @@ h2 {
 h3 {
   font-family: 'Playfair Display', serif;
   font-weight: 900;
-  /* max ~30px, min ~20px */
-  font-size: clamp(1.25rem, 1.8vw + 0.4rem, 1.875rem);
+  font-size: clamp(1.25rem, 1.8vw + 0.4rem, 1.875rem); /* max ~30px, min ~20px */
   line-height: 0.8em;
 }
 
 h4 {
   font-family: 'Playfair Display', serif;
   font-weight: 600;
-  /* max ~18px, min ~16px */
-  font-size: clamp(1rem, 0.6vw + 0.6rem, 1.125rem);
+  font-size: clamp(1rem, 0.6vw + 0.6rem, 1.125rem); /* max ~18px, min ~16px */
   line-height: 0.8em;
 }
 
 h5, .fat-text {
   font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 800;
-  /* max ~20px, min ~17px */
-  font-size: clamp(1.0625rem, 0.7vw + 0.6rem, 1.25rem);
+  font-size: clamp(1.0625rem, 0.7vw + 0.6rem, 1.25rem); /* max ~20px, min ~17px */
   line-height: 1em;
 }
 
 p, .text-normal {
   font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 400;
-  /* max ~18px, min ~16px */
-  font-size: clamp(1rem, 0.6vw + 0.6rem, 1.125rem);
+  font-size: clamp(1rem, 0.6vw + 0.6rem, 1.125rem); /* max ~18px, min ~16px */
   line-height: 1.5em;
 }
 
@@ -88,8 +82,7 @@ p[data-highlight="bold"] {
 .footer, .text-small {
   font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 300;
-  /* max ~14px, min ~13px */
-  font-size: clamp(0.8125rem, 0.4vw + 0.55rem, 0.875rem);
+  font-size: clamp(0.8125rem, 0.4vw + 0.55rem, 0.875rem); /* max ~14px, min ~13px */
 }
 
 .white-text, .on-color-section {
@@ -115,9 +108,8 @@ a:hover { color: var(--color-main-purple); }
 
 .eyebrow {
   font-family: 'Playfair Display', serif;
-  font-weight: 600;
-  /* max ~18px, min ~16px */
-  font-size: clamp(1rem, 0.6vw + 0.6rem, 1.125rem);
+  font-weight: 600; 
+  font-size: clamp(1rem, 0.6vw + 0.6rem, 1.125rem); /* max ~18px, min ~16px */
   line-height: 0.8em;
   text-transform: capitalize;
   color: var(--color-text-black);
@@ -348,17 +340,26 @@ figure {
   width: 44px;
   height: 44px;
   display: block;
-  object-fit: contain; /* verhindert Verzerrung bei unterschiedlichen Originalgrößen */
+  object-fit: contain; /* Verzerrung bei unterschiedlichen Originalgrößen vermeiden */
 }
 
 .grid_container_experience {
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr; 
-  grid-template-rows: auto 1fr; 
+  grid-template-rows: min-content 1fr; 
   gap: 0px 0px; 
   grid-template-areas: 
     "grid_text grid_text grid_text"
-    "card_1 card_2 card_3"
+    "card_1 card_2 card_3";
+}
+
+.grid_container_experience .grid_text {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.grid_container_experience .card_3 {
+  padding-bottom: clamp(32px, 4vw, 43.488px);
 }
 
 .grid_container_skills_ext {
@@ -369,7 +370,12 @@ figure {
   grid-template-areas: 
     "skills_img grid_text grid_text grid_text"
     "skills_img card_1 card_2 card_3"
-    "skills_img card_4 card_5 card_6"; 
+    "skills_img card_4 card_5 card_6";
+  row-gap: clamp(8px, 2vw, 18px);
+}
+.grid_container_skills_ext .grid_text {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
   .card_4 {
     grid-area: card_4;
@@ -476,7 +482,6 @@ figure {
 }
 
 /* Contact Page */
-
 .grid_container_intro_contact {
   display: grid;
   margin: clamp(0.2rem, 4vw, 2rem);
@@ -677,16 +682,18 @@ iframe {
   body {
     margin: 24px;
   }
+
   .site-wrapper {
     min-height: calc(100vh - 48px);
   }
-  /* Entfernt harte Schriftgrößen – clamp() Skalierung aus Basis-Styles übernimmt.
-     Falls feinere Anpassung nötig ist, könnten hier nur line-height oder Margins gesetzt werden. */
+
   .sec_img_left {
     padding: 0;
   }
+
   .sec_img_right {
-    padding: 0;
+    padding: 0
+    ;
   }
   .grid_container_skills {
     display: grid; 
@@ -742,13 +749,14 @@ iframe {
   .grid_container_experience {
     display: grid; 
     grid-template-columns: 1fr; 
-    grid-template-rows: 1fr; 
+    grid-template-rows: min-content 1fr; 
     gap: 0px 0px; 
     grid-template-areas: 
       "grid_text"
       "card_1"
       "card_2"
-      "card_3"; 
+      "card_3";
+    row-gap: clamp(10px, 2.5vw, 20px);
 }
 
 .grid_container_skills_ext {
@@ -764,6 +772,7 @@ iframe {
     "skills_img card_4"
     "skills_img card_5"
     "skills_img card_6";
+  row-gap: clamp(10px, 2.5vw, 20px);
   }
 
 .grid_container_hardfacts {
@@ -1029,7 +1038,6 @@ iframe {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  /* entfernt defektes 'padding' Keyword ohne Wert */
   gap: 0px 48px;
   grid-template-areas:
     "grid_text"
