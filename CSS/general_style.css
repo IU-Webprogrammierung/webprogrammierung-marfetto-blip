@@ -678,7 +678,7 @@ iframe {
 /* Media Query für Tablet */
 @media (max-width: 1024px) {
   body {
-    margin: 24px;
+    margin: 24px 24px 0 24px;
   }
 
   .site-wrapper {
@@ -919,7 +919,7 @@ iframe {
 /* Media Query für Smartphone */
 @media (max-width: 767px) {
   body {
-    margin: 20px;
+    margin: 20px 20px 0 20px;
   }
   .site-wrapper {
     min-height: calc(100vh - 40px);
