@@ -35,14 +35,16 @@ p, .text-normal, .footer, .text-small {
 h1 {
   font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 800;
-  font-size: 90px;
+  /* max ~90px, min ~36px */
+  font-size: clamp(2.25rem, 5.5vw + 0.5rem, 5.625rem);
   line-height: 1em;
 }
 
 h2 {
   font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 800;
-  font-size: 65px;
+  /* max ~65px, min ~28px */
+  font-size: clamp(1.75rem, 3.8vw + 0.4rem, 4.0625rem);
   line-height: 1em;
   margin-top: 10px;
 }
@@ -50,28 +52,32 @@ h2 {
 h3 {
   font-family: 'Playfair Display', serif;
   font-weight: 900;
-  font-size: 30px;
+  /* max ~30px, min ~20px */
+  font-size: clamp(1.25rem, 1.8vw + 0.4rem, 1.875rem);
   line-height: 0.8em;
 }
 
 h4 {
   font-family: 'Playfair Display', serif;
   font-weight: 600;
-  font-size: 18px;
+  /* max ~18px, min ~16px */
+  font-size: clamp(1rem, 0.6vw + 0.6rem, 1.125rem);
   line-height: 0.8em;
 }
 
 h5, .fat-text {
   font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 800;
-  font-size: 20px;
+  /* max ~20px, min ~17px */
+  font-size: clamp(1.0625rem, 0.7vw + 0.6rem, 1.25rem);
   line-height: 1em;
 }
 
 p, .text-normal {
   font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  /* max ~18px, min ~16px */
+  font-size: clamp(1rem, 0.6vw + 0.6rem, 1.125rem);
   line-height: 1.5em;
 }
 
@@ -82,7 +88,8 @@ p[data-highlight="bold"] {
 .footer, .text-small {
   font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 300;
-  font-size: 14px;
+  /* max ~14px, min ~13px */
+  font-size: clamp(0.8125rem, 0.4vw + 0.55rem, 0.875rem);
 }
 
 .white-text, .on-color-section {
@@ -109,7 +116,8 @@ a:hover { color: var(--color-main-purple); }
 .eyebrow {
   font-family: 'Playfair Display', serif;
   font-weight: 600;
-  font-size: 18px;
+  /* max ~18px, min ~16px */
+  font-size: clamp(1rem, 0.6vw + 0.6rem, 1.125rem);
   line-height: 0.8em;
   text-transform: capitalize;
   color: var(--color-text-black);
@@ -330,12 +338,17 @@ figure {
   margin-block-end: 0;
 }
 .social.media li {
-  
   display: block;
-  list-style-type: disc;
-  margin: 15px 15px 15px ;
+  list-style: none; /* keine Punkte für die Icons */
+  margin: 0 12px 0 0; /* horizontaler Abstand */
   padding: 0;
   unicode-bidi: isolate;
+}
+.social.media img {
+  width: 44px;
+  height: 44px;
+  display: block;
+  object-fit: contain; /* verhindert Verzerrung bei unterschiedlichen Originalgrößen */
 }
 
 .grid_container_experience {
@@ -466,7 +479,7 @@ figure {
 
 .grid_container_intro_contact {
   display: grid;
-  margin: clamp(0.2rem, 4vw, 2rem)
+  margin: clamp(0.2rem, 4vw, 2rem);
   grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
   grid-template-rows: 0.5fr 0.5fr;
   grid-template-areas:
@@ -475,7 +488,7 @@ figure {
 }
 
 .card_mail, .card_phone, .card_social, .card_figma {
-  margin: clamp(0.2rem, 4vw, 2rem)
+  margin: clamp(0.2rem, 4vw, 2rem);
 }
 
 .card_social .social {
@@ -495,7 +508,7 @@ figure {
 
 .grid_container_contactform {
   display: grid;
-  margin: clamp(0.2rem, 4vw, 2rem)
+  margin: clamp(0.2rem, 4vw, 2rem);
   grid-template-columns: 1.2fr 2fr;
   grid-template-rows: auto;
   grid-template-areas:
@@ -564,8 +577,7 @@ button.send-btn {
 
 iframe {
     display: block;
-    width=100%;
-    height=max;
+  width: 100%;
     margin: 0;
     padding: 0;
     border: none;
@@ -668,17 +680,8 @@ iframe {
   .site-wrapper {
     min-height: calc(100vh - 48px);
   }
-  h1 { font-size: 65px; }
-  h2 { font-size: 40px; }
-  h3 { font-size: 25px; }
-  h4 { font-size: 18px; }
-  h5, .fat-text { font-size: 18px; }
-  p, .text-normal { font-size: 18px; }
-  .footer, .text-small { font-size: 14px; }
-  .eyebrow {
-    font-size: 18px;
-    color: var(--color-text-black);
-  }
+  /* Entfernt harte Schriftgrößen – clamp() Skalierung aus Basis-Styles übernimmt.
+     Falls feinere Anpassung nötig ist, könnten hier nur line-height oder Margins gesetzt werden. */
   .sec_img_left {
     padding: 0;
   }
@@ -811,7 +814,7 @@ iframe {
 
 .grid_container_contactform {
   display: grid;
-  margin: clamp(0.2rem, 4vw, 2rem)
+  margin: clamp(0.2rem, 4vw, 2rem);
   grid-template-columns: auto;
   grid-template-rows: 0.3fr 0.1fr 0.2fr;
   grid-template-areas:
@@ -952,7 +955,7 @@ iframe {
   .grid_container_works {
   display: grid; 
   grid-template-columns: 1fr; 
-  grid-template-rows: 1fr; 1fr; 1fr; 1fr; 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
   gap: 0px 0px; 
   grid-template-areas: 
     "grid_text"
@@ -1026,7 +1029,7 @@ iframe {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  padding
+  /* entfernt defektes 'padding' Keyword ohne Wert */
   gap: 0px 48px;
   grid-template-areas:
     "grid_text"

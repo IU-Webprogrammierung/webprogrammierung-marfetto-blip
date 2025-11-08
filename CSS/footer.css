@@ -14,7 +14,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 44px 30px 20px 68px;
+  padding: clamp(0.2rem, 4vw, 2rem);
 }
 
 .footer-brand {
@@ -135,17 +135,9 @@
   overflow: hidden;
 }
 
-/* Responsive: Zwei Spalten auch auf Tablet & Mobile */
+/* Tablet: keep two columns */
 @media (max-width: 1024px) {
-  .footer {
-    flex-direction: column;
-    border-radius: 0;
-    padding: 0;
-    min-height: 0;
-  }
-  .footer_blue {
-    padding: 24px 12px 0 12px;
-  }
+
   .footer-main-content {
     flex-direction: row;
     align-items: flex-start;
@@ -156,17 +148,8 @@
     max-width: 220px;
     margin-right: 12px;
   }
-  .footer_inits {
+  .footer-initials {
     font-size: 40px;
-  }
-  .footer_yellow {
-    border-radius: 0 
-    min-width: 0;
-    width: 100%;
-    padding: 20px 10px;
-    align-items: center;
-    justify-content: center;
-    height: auto;
   }
   .footer-contact-heading {
     font-size: 20px;
@@ -177,6 +160,13 @@
 }
 
 @media (max-width: 767px) {
+  /* Mobile: stack footer columns */
+  .footer {
+    flex-direction: column;
+    border-radius: 0;
+    padding: 0;
+    min-height: 0;
+  }
   .footer_blue {
     padding: 12px 4px 0 4px;
   }
@@ -189,7 +179,7 @@
     font-size: 14px;
     max-width: 120px;
   }
-  .footer_inits {
+  .footer-initials {
     font-size: 26px;
   }
   .footer-nav a {
@@ -198,6 +188,11 @@
   .footer_yellow {
     padding: 12px 3px;
     min-width: 0;
+    width: 100%;
+    border-radius: 0;
+    align-items: center;
+    justify-content: center;
+    height: auto;
   }
   .footer-contact-heading {
     font-size: 14px;
