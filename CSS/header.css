@@ -66,7 +66,7 @@ body.page-works .skip-link img {
 
 .header-logo {
   font-weight: 700;
-  font-size: 1.25rem;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
   margin: 0;
   color: var(--color-text-black);
 }
@@ -89,8 +89,10 @@ body.page-works .skip-link img {
   align-items: center;
   justify-content: center;
   position: static;
-  top: auto;
-  right: auto;
+}
+
+.burger-button .material-symbols-rounded {
+  font-size: clamp(32px, 6vw, 50px);
 }
 
 .material-symbols-rounded {
@@ -107,6 +109,26 @@ body.page-works .skip-link img {
 .burger-button .material-symbols-rounded::after {
   content: 'menu';
   font-family: 'Material Symbols Rounded';
+}
+
+.burger-toggle:checked + .burger-button {
+  position: fixed;
+  top: 80px;
+  right: 75px;
+}
+
+@media (max-width: 1024px) {
+  .burger-toggle:checked + .burger-button {
+    top: 49px;
+    right: 49px;
+  }
+}
+
+@media (max-width: 767px) {
+  .burger-toggle:checked + .burger-button {
+    top: 45px;
+    right: 45px;
+  }
 }
 
 .burger-toggle:checked + .burger-button .material-symbols-rounded {
@@ -130,28 +152,152 @@ body.page-works .skip-link img {
   pointer-events: auto;
 }
 
+/* Menü Overlay */
 .nav-overlay {
   position: fixed;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background-color: rgba(0,0,0,0.9);
+  inset: 0;
+  background: var(--color-sub-beige);
+  border: 50px solid var(--color-text-white);
   display: none;
-  justify-content: center;
-  align-items: center;
   z-index: 1000;
-  flex-direction: column;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  gap: 0px 0px;
+  grid-template-areas:
+    "nav-overlay-photo nav-overlay-menu"
+    "nav-overlay-contact nav-overlay-contact";
 }
 
 .burger-toggle:checked ~ .nav-overlay {
+  display: grid;
+}
+
+.nav-overlay-photo {
+  grid-area: nav-overlay-photo;
+  background: url('/media/Illustrations/Vespa.png') center/cover;
+}
+
+.nav-overlay-menu {
+  grid-area: nav-overlay-menu;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 40px;
+}
+
+.nav-overlay-contact {
+  grid-area: nav-overlay-contact;
+  background: var(--color-sub-lightblue);
+  padding: 30px 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.nav-contact-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.nav-contact-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .nav-overlay ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  color: white;
-  text-align: center;
-  width: 100%;
+}
+
+.nav-overlay li {
+  margin-bottom: 2rem;
+}
+
+.nav-overlay-menu a {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: clamp(1.75rem, 3.8vw + 0.4rem, 4.0625rem);
+  font-weight: 800;
+  color: var(--color-text-black);
+  text-decoration: none;
+}
+
+.nav-overlay-menu a:hover {
+  color: var(--color-sub-lightblue);
+}
+
+.nav-overlay-contact * {
+  color: var(--color-text-white);
+}
+
+.footer-initials {
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 700;
+  color: var(--color-text-white);
+}
+
+.footer-motto {
+  color: var(--color-text-white);
+  text-align: left;
+}
+
+.footer-social {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-social a {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  transition: transform 0.3s ease;
+}
+
+.footer-social a:hover {
+  transform: scale(1.2);
+}
+
+.footer-email a {
+  color: var(--color-text-white);
+  text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+  .nav-overlay {
+    border: 24px solid var(--color-text-white);
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-overlay {
+    border: 20px solid var(--color-text-white);
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "nav-overlay-menu"
+      "nav-overlay-contact";
+  }
+  
+  .nav-overlay-photo {
+    display: none;
+  }
+  
+  .nav-overlay-menu {
+    padding: 60px 30px 30px;
+  }
+  
+  .nav-overlay-contact {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .nav-contact-left {
+    align-items: center;
+    text-align: center;
+  }
 }
 
 .header_content {
