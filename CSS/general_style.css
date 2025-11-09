@@ -657,6 +657,8 @@ iframe {
   width: 100%;
   height: 100%;
   margin: 0;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 /* Video responsive in Grid*/
@@ -668,6 +670,20 @@ iframe {
   height: 100%;
   display: block; /* Inline-Abstand raus */
   object-fit: cover;
+}
+
+/* Transition nur für Bilder, nicht für Videos */
+.project_img1 img,
+.project_img2 img,
+.project_img3 img {
+  transition: transform 0.4s ease-in-out; /* Smooth Zoom-Effekt */
+}
+
+/* Zoom-Effekt bei Hover - nur für Bilder */
+.project_img1:hover img,
+.project_img2:hover img,
+.project_img3:hover img {
+  transform: scale(1.1); /* 10% Vergrößerung */
 }
 
 .project_text {
