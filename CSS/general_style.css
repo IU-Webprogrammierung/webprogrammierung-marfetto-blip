@@ -31,7 +31,7 @@ body {
 }
 
 h1, h2, h3, h4, h5,
-p, .text-normal, .footer, .text-small {
+p, .footer {
   color: var(--color-text-black);
 }
 
@@ -64,14 +64,14 @@ h4 {
   line-height: 0.8em;
 }
 
-h5, .fat-text {
+h5 {
   font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 800;
   font-size: clamp(1.0625rem, 0.7vw + 0.6rem, 1.25rem); /* max ~20px, min ~17px */
   line-height: 1em;
 }
 
-p, .text-normal {
+p {
   font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 400;
   font-size: clamp(1rem, 0.6vw + 0.6rem, 1.125rem); /* max ~18px, min ~16px */
@@ -82,32 +82,14 @@ p[data-highlight="bold"] {
   font-weight: bold;
 }
 
-.footer, .text-small {
+.footer {
   font-family: 'Montserrat', Arial, sans-serif;
   font-weight: 300;
   font-size: clamp(0.8125rem, 0.4vw + 0.55rem, 0.875rem); /* max ~14px, min ~13px */
 }
 
-.white-text, .on-color-section {
-  color: var(--color-text-white) !important;
-}
-
 a { color: var(--color-main-blue); }
 a:hover { color: var(--color-main-purple); }
-
-.button-primary {
-  background-color: var(--color-main-red);
-  color: var(--color-text-white);
-}
-.button-secondary {
-  background-color: var(--color-main-yellow);
-  color: var(--color-text-black);
-}
-
-.card-blue { background-color: var(--color-sub-blue); }
-.card-green { background-color: var(--color-sub-green); }
-.card-pink { background-color: var(--color-sub-pink); }
-.card-lightred { background-color: var(--color-sub-lightred); }
 
 .eyebrow {
   font-family: 'Playfair Display', serif;
@@ -140,14 +122,7 @@ a:hover { color: var(--color-main-purple); }
 }
 
 .empty {
-  background: #fff;
-}
-
-.container {
-  display: grid; 
-  grid-template-columns: 1fr 1fr; 
-  gap: 0px 0px; 
-  height: 4em; 
+  background: var(--color-main-white);
 }
 
 /* Section mit Bild links oder rechts */
@@ -618,6 +593,54 @@ iframe {
     "grid_img_4 grid_img_5 grid_img_6";
 }
 
+/* Project Card Hover Effect */
+.project-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.project-card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: opacity 0.3s;
+}
+
+.project-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s;
+}
+
+.project-overlay h5 {
+  color: var(--color-text-black);
+}
+
+.project-link:hover .project-overlay {
+  opacity: 1;
+}
+
+.project-link:hover img {
+  opacity: 0;
+}
+
 /* Project Pages */
 .grid_container_project {
   margin-top: 3vw;
@@ -943,12 +966,12 @@ iframe {
     h2 { font-size: 30px; }
     h3 { font-size: 20px; }
     h4 { font-size: 18px; }
-    h5, .fat-text { font-size: 18px; }
-    p, .text-normal { 
+    h5 { font-size: 18px; }
+    p { 
       font-size: 16px; 
       line-height: 1.5em; 
   }
-  .footer, .text-small { font-size: 14px; }
+  .footer { font-size: 14px; }
   .eyebrow {
     font-size: 18px;
     line-height: 0.8em;
