@@ -1,9 +1,9 @@
-<h1>PHASE 1</h1>
+<h1>PHASE&nbsp;2</h1>
 <h2 dir="auto" data-sourcepos="1:1-1:50">Portfolio Project &ndash; Web-Programming (DLBUXPWP01)</h2>
 <p dir="auto" data-sourcepos="3:1-3:379">This repository contains a personal portfolio project, which was developed for the IU International University course "Web-Programmierung (DLBUXPWP01)". The objective of the project was to create a fully responsive, accessible, and visually engaging portfolio website that highlights both personal and professional aspects, with a particular emphasis on practical UX design work.</p>
 <hr />
 <h3 dir="auto" data-sourcepos="5:1-5:12">Project Idea</h3>
-<p dir="auto" data-sourcepos="7:1-7:313">The main concept was to build a static website that introduces myself, my experiences and selected design projects in a professional and appealing way. The focus was on clear information architecture, aesthetic design, and precise technical implementation &ndash; relying exclusively on HTML, CSS and maybe JavaScript</p>
+<p dir="auto" data-sourcepos="7:1-7:313">The main concept was to build a static website that introduces myself, my experiences and selected design projects in a professional and appealing way. The focus was on clear information architecture, aesthetic design, and precise technical implementation &ndash; relying exclusively on HTML, CSS and small JavaScript elements.</p>
 <hr />
 <h3 dir="auto">Menu</h3>
 <p dir="auto">Home.</p>
@@ -62,8 +62,8 @@
 </ul>
 </ul>
 </td>
-<td style="width: 37.55px; height: 165px;">content inserted</td>
-<td style="width: 36.45px; height: 165px;">TBD</td>
+<td style="width: 37.55px; height: 165px;">DONE</td>
+<td style="width: 36.45px; height: 165px;">Mostly done</td>
 </tr>
 <tr style="height: 298px;">
 <td style="width: 122px; height: 298px;">
@@ -87,8 +87,8 @@
 </ul>
 </ul>
 </td>
-<td style="width: 37.55px; height: 298px;">content inserted</td>
-<td style="width: 36.45px; height: 298px;">TBD</td>
+<td style="width: 37.55px; height: 298px;">DONE</td>
+<td style="width: 36.45px; height: 298px;">Mostly done</td>
 </tr>
 <tr style="height: 165px;">
 <td style="width: 122px; height: 165px;">
@@ -109,7 +109,7 @@
 </ul>
 </ul>
 </td>
-<td style="width: 37.55px; height: 165px;">content inserted</td>
+<td style="width: 37.55px; height: 165px;">DONE</td>
 <td style="width: 36.45px; height: 165px;">TBD</td>
 </tr>
 <tr style="height: 127px;">
@@ -132,8 +132,8 @@
 </ul>
 </ul>
 </td>
-<td style="width: 37.55px; height: 127px;">TBD</td>
-<td style="width: 36.45px; height: 127px;">TBD</td>
+<td style="width: 37.55px; height: 127px;">DONE</td>
+<td style="width: 36.45px; height: 127px;">Mostly done</td>
 </tr>
 <tr style="height: 127px;">
 <td style="width: 122px; height: 127px;">
@@ -155,8 +155,8 @@
 </ul>
 </ul>
 </td>
-<td style="width: 37.55px; height: 127px;">TBD</td>
-<td style="width: 36.45px; height: 127px;">TBD</td>
+<td style="width: 37.55px; height: 127px;">DONE</td>
+<td style="width: 36.45px; height: 127px;">Mostly done</td>
 </tr>
 <tr style="height: 127px;">
 <td style="width: 122px; height: 127px;">
@@ -178,8 +178,8 @@
 </ul>
 </ul>
 </td>
-<td style="width: 37.55px; height: 127px;">TBD</td>
-<td style="width: 36.45px; height: 127px;">TBD</td>
+<td style="width: 37.55px; height: 127px;">DONE</td>
+<td style="width: 36.45px; height: 127px;">Mostly done</td>
 </tr>
 <tr style="height: 127px;">
 <td style="width: 122px; height: 127px;">
@@ -201,8 +201,8 @@
 </ul>
 </ul>
 </td>
-<td style="width: 37.55px; height: 127px;">TBD</td>
-<td style="width: 36.45px; height: 127px;">TBD</td>
+<td style="width: 37.55px; height: 127px;">DONE</td>
+<td style="width: 36.45px; height: 127px;">Mostly done</td>
 </tr>
 <tr style="height: 102px;">
 <td style="width: 122px; height: 102px;">
@@ -218,8 +218,8 @@
 <li>Pictures from the work</li>
 </ul>
 </td>
-<td style="width: 37.55px; height: 102px;">TBD</td>
-<td style="width: 36.45px; height: 102px;">TBD</td>
+<td style="width: 37.55px; height: 102px;">DONE</td>
+<td style="width: 36.45px; height: 102px;">Mostly done</td>
 </tr>
 <tr style="height: 102px;">
 <td style="width: 122px; height: 102px;">&nbsp;
@@ -235,8 +235,8 @@
 <li>Pictures from the work</li>
 </ul>
 </td>
-<td style="width: 37.55px; height: 102px;">TBD</td>
-<td style="width: 36.45px; height: 102px;">TBD</td>
+<td style="width: 37.55px; height: 102px;">DONE</td>
+<td style="width: 36.45px; height: 102px;">Mostly done</td>
 </tr>
 <tr style="height: 222px;">
 <td style="width: 122px; height: 222px;">
@@ -258,8 +258,8 @@
 </ul>
 </ul>
 </td>
-<td style="width: 37.55px; height: 222px;">content inserted</td>
-<td style="width: 36.45px; height: 222px;">TBD</td>
+<td style="width: 37.55px; height: 222px;">DONE</td>
+<td style="width: 36.45px; height: 222px;">DONE</td>
 </tr>
 <tr style="height: 70px;">
 <td style="width: 122px; height: 70px;">
@@ -275,9 +275,9 @@
 <p dir="auto">Legal information</p>
 </td>
 <td style="width: 37.55px; height: 70px;">
-<p dir="auto">TBD</p>
+<p dir="auto">DONE</p>
 </td>
-<td style="width: 36.45px; height: 70px;">TBD</td>
+<td style="width: 36.45px; height: 70px;">DONE</td>
 </tr>
 <tr style="height: 51px;">
 <td style="width: 122px; height: 51px;">
@@ -293,10 +293,11 @@
 <p dir="auto">Privacy Policy.</p>
 </td>
 <td style="width: 37.55px; height: 51px;">
-<p dir="auto">TBD</p>
+<p dir="auto">DONE</p>
 </td>
-<td style="width: 36.45px; height: 51px;">TBD</td>
+<td style="width: 36.45px; height: 51px;">DONE</td>
 </tr>
 </tbody>
 </table>
 <p>&nbsp;</p>
+<div style="bottom: 10px; right: 10px; position: absolute;"><a style="font-size: 11px; color: #d0d0d0;" href="https://wordtohtml.net/?utm_source=wth_free_link&amp;utm_medium=external" target="_blank">Email Signature Editor</a></div>
