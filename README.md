@@ -299,5 +299,4 @@
 </tr>
 </tbody>
 </table>
-<p>&nbsp;</p>
-<div style="bottom: 10px; right: 10px; position: absolute;"><a style="font-size: 11px; color: #d0d0d0;" href="https://wordtohtml.net/?utm_source=wth_free_link&amp;utm_medium=external" target="_blank">Email Signature Editor</a></div>
+
