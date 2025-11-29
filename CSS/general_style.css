@@ -1,6 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;900&display=swap');
-
 :root {
   --color-main-red: #FF6666;
   --color-main-yellow: #FFD324;
@@ -877,7 +874,6 @@ iframe {
 
 .grid_container_contactform {
   display: grid;
-  margin: clamp(0.2rem, 4vw, 2rem);
   grid-template-columns: auto;
   grid-template-rows: 0.3fr 0.1fr 0.2fr;
   grid-template-areas:

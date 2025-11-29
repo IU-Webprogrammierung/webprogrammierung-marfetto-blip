@@ -174,7 +174,7 @@ body.page-works .skip-link img {
 
 .nav-overlay-photo {
   grid-area: nav-overlay-photo;
-  background: url('/media/Illustrations/Vespa.png') center/cover;
+  background: url('/media/Illustrations/Vespa_small.webp') center/cover;
 }
 
 .nav-overlay-menu {
