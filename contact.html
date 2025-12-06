@@ -43,7 +43,7 @@
                             <li><a href="https://www.xing.com/profile/Marvin_Hermann5" target="_blank" aria-label="LinkedIn" rel="noopener"><img src="/media/Footer/Linkedin_black.png" alt="LinkedIn logo" width="44" height="44"></a></li>
                             <li><a href="https://www.instagram.com/marfetto" target="_blank" aria-label="Instagram" rel="noopener"><img src="/media/Footer/Instagram_black.png" alt="Instagram logo" width="44" height="44"></a></li>
                         </ul>
-                        <p class="footer-email"><a href="mailto:marfetto@gmail.com">marfetto@gmail.com</a></p>
+                        <p class="footer-email"><a href="mailto:mh@design.com">mh@design.com</a></p>
                     </section>
                 </div>
             </nav>
@@ -94,22 +94,22 @@
             <form class="contact_form" method="dialog">
                 <div class="input_grid">
                     <label for="fullname"><p>FULL NAME</p></label>
-                    <input type="text" id="fullname" name="fullname" required autocomplete="name">
+                    <input type="text" id="fullname" name="fullname" required aria-required="true" autocomplete="name">
 
                     <label for="email"><p>EMAIL ADDRESS</p></label>
-                    <input type="email" id="email" name="email" required autocomplete="email">
+                    <input type="email" id="email" name="email" required aria-required="true" autocomplete="email">
 
                     <label for="phone"><p>PHONE</p></label>
                     <input type="tel" id="phone" name="phone" autocomplete="tel">
 
                     <label for="message" class="textarea-label"><p>MESSAGE</p></label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
                     <button type="submit" class="send-btn" formaction="#confirmation-dialog" onclick="document.getElementById('confirmation-dialog').showModal(); this.form.reset(); return false;"><p>Send &gt;</p></button>
                 </div>
             </form>
         </section>
         
-        <dialog id="confirmation-dialog" aria-label="Confirmation">
+        <dialog id="confirmation-dialog" role="alertdialog" aria-label="Confirmation">
             <p>Messages sent! I will get back to you soon.</p>
             <form method="dialog">
                 <button aria-label="Close dialog">OK</button>
