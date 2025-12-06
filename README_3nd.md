@@ -317,8 +317,6 @@
 <li>Tried lazy loading on images</li>
 <li>Tried&nbsp;<strong><code>font-display: swap</code></strong></li>
 </ul>
-</li>
-<li></li>
 </ul>
 <h3 id="approach" dir="auto">Thoughtful Design Decision:</h3>
 <ul>
