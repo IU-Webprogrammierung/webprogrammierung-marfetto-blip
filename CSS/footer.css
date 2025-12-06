@@ -136,7 +136,7 @@
   overflow: hidden;
 }
 
-/* Tablet: keep two columns */
+/* Tablet: zwei Spalten */
 @media (max-width: 1024px) {
 
   .footer-main-content {
@@ -161,7 +161,7 @@
 }
 
 @media (max-width: 767px) {
-  /* Mobile: stack footer columns */
+  /* Mobile: Stapeln */
   .footer {
     flex-direction: column;
     border-radius: 0;

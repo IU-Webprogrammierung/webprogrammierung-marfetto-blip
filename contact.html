@@ -62,7 +62,7 @@
             </article>
             <article class="card_mail">
                 <h5><br/>MAIL</h5>
-                <p><a href="mailto:marfetto@gmail.com">mh@design.com</a></p>
+                <p><a href="mailto:marfetto@gmail.com">marfetto@gmail.com</a></p>
             </article>
             <article class="card_phone">
                 <h5><br/>PHONE</h5>
@@ -78,7 +78,7 @@
             </article>
             <article class="card_figma">
                 <h5><br/>FIGMA</h5>
-                <p><a href="https://www.figma.com/@marvin.hermann@vwfs.com" target="_blank" aria-label="Figma_Profile" rel="noopener">Marfetto Hermano</a></p>
+                <p><a href="https://figma.com/@7c357c9c_2c70_4" target="_blank" aria-label="Figma_Profile" rel="noopener">Marvin</a></p>
             </article>
         </section>
 
@@ -91,7 +91,7 @@
                 <h2 id="contact_title">Drop Me<br/>A Line.</h2>
                 <p>Have a question or want to start a project together? Simply fill out the form below. I'm looking forward to hearing from you!</p>
             </article>
-            <form class="contact_form">
+            <form class="contact_form" method="dialog">
                 <div class="input_grid">
                     <label for="fullname"><p>FULL NAME</p></label>
                     <input type="text" id="fullname" name="fullname" required autocomplete="name">
@@ -104,10 +104,17 @@
 
                     <label for="message" class="textarea-label"><p>MESSAGE</p></label>
                     <textarea id="message" name="message" rows="5" required></textarea>
-                    <button type="submit" class="send-btn"><p>Send &gt;</p></button>
+                    <button type="submit" class="send-btn" formaction="#confirmation-dialog" onclick="document.getElementById('confirmation-dialog').showModal(); this.form.reset(); return false;"><p>Send &gt;</p></button>
                 </div>
             </form>
         </section>
+        
+        <dialog id="confirmation-dialog" aria-label="Confirmation">
+            <p>Messages sent! I will get back to you soon.</p>
+            <form method="dialog">
+                <button aria-label="Close dialog">OK</button>
+            </form>
+        </dialog>
         
         <section id="location" class="sec_img_right bg-7" aria-label="Meet me in Braunschweig">
             <article class="txt">

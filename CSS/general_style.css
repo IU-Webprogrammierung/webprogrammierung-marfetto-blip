@@ -496,7 +496,7 @@ figure {
 }
 
 .card_social .social img {
-  width: clamp(38px, 10vw, 65px);
+  width: clamp(28px, 10vw, 45px);
   height: auto;
   object-fit: contain; /* Bildverzerrung vermeiden */
 }
@@ -567,6 +567,31 @@ button.send-btn {
   padding: 0px;
   grid-area: button;
   margin-top: 18px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+button.send-btn p {
+  text-decoration: none;
+  transition: text-decoration 0.2s ease;
+}
+
+button.send-btn:hover p {
+  text-decoration: underline;
+}
+
+button.send-btn:active {
+  transform: scale(0.95);
+}
+
+/* Bestätigung Dialog-Message */
+dialog {
+  padding: 2rem;
+  border: 1px solid #ccc;
+}
+
+dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
 }
 
 iframe {
@@ -714,7 +739,7 @@ iframe {
   justify-self: start;
 }
 .arrow-svg {
-  color:var(--color-text-black); /* Initial Arrow Color */
+  color:var(--color-text-black); /* Anfangsfarbe Pfeil */
   transition: transform 0.2s, color 0.15s;
   width: 48px;
   height: 48px;
@@ -726,7 +751,7 @@ iframe {
   color:--color-main-white;
 }
 .grid-arrow:focus .arrow-svg {
-  outline: 2px solid #7575ED; /* accessibility fokus visable */
+  outline: 2px solid #7575ED; /* Accessibility Fokus */
   outline-offset: 4px;
 }
 
@@ -1110,6 +1135,3 @@ iframe {
     "grid_img_5"
     "grid_img_6";
 }
-}
-
-  

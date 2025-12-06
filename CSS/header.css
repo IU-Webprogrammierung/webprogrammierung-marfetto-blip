@@ -322,12 +322,9 @@ body.page-works .skip-link img {
 }
 
 .skip-link {
-    /* Absolute Positionierung relativ zur .header_content Section */
-    position: absolute; 
-    /*Abstand des Pfeils vom unteren Rand der Section */
-    bottom: 65px; 
-    /*Zentrierung des Pfeils */
-    left: 50%;
+    position: absolute; /* Absolute Positionierung relativ zur .header_content Section */
+    bottom: 65px; /*Abstand des Pfeils vom unteren Rand der Section */
+    left: 50%; /*Zentrierung des Pfeils */
     transform: translateX(-50%); 
 }
 
@@ -364,4 +361,5 @@ body.page-works .skip-link img {
     body.page_works header,
     body.page_contact header {
         min-height: 815px;
+}
 }
