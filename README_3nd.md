@@ -301,6 +301,25 @@
 <li>Special attention to accessibility, readability, spacing, and touch targets on mobile devices</li>
 <li>Fluid typography and responsive images for seamless scaling</li>
 </ul>
+<h3 id="approach" dir="auto">Obsticles</h3>
+<ul dir="auto" type="disc">
+<li>Google Lighthouse rated all pages in desktop voew&nbsp;with 90-100 points in performance, accessibility and best practices. However: In the mobile view, 90% performance was not achieved on all pages. Although the following points were attempted:
+<ul>
+<li>
+<p>Implementing the font in the local folder</p>
+</li>
+<li>
+<p>Reducing image sizes and trying out multiple image formats (webp, jpg, svg, png).</p>
+</li>
+<li>
+<p>Defer/Async: loadFooter.js with defer</p>
+</li>
+<li>Tried lazy loading on images</li>
+<li>Tried&nbsp;<strong><code>font-display: swap</code></strong></li>
+</ul>
+</li>
+<li></li>
+</ul>
 <h3 id="approach" dir="auto">Thoughtful Design Decision:</h3>
 <ul>
 <li>Fonts integrated locally into the file to improve website performance</li>
